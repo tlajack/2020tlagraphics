@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
-const placeholder = "../images/logo-optimized.svg"
+import placeholder from "../images/logo-optimized.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +14,7 @@ const IndexPage = () => (
     <div className="container">
 		{/* <!-- HERO SECTION --> */}
 		<div className="hero">
-			<img className="placeholder" src={placeholder} alt="" />
+			<img className="placeholder" src={placeholder} alt="placeholder image" />
 		</div>
 		
 		{/* <!-- SERVICES SECTION --> */}
