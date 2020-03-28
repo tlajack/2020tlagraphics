@@ -26,12 +26,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+      <div id="top">
         <main>{children}</main>
         <footer>
+          <div>
           © {new Date().getFullYear()}, 
           {` `+data.site.siteMetadata.title}
-          
+          </div>
+
+          <a href="#top">
+            <span class="to-the-top-long">
+                To the top <span class="arrow" aria-hidden="true">↑</span>
+            </span>
+          </a>
         </footer>
       </div>
     </>

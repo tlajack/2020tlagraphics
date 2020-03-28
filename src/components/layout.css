@@ -624,6 +624,12 @@ pre tt:after {
 
 
 /* TLA Stles */
+footer{
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 body,*{
 	padding:0px;
@@ -631,6 +637,9 @@ body,*{
 	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
 	color: #515154;
 	font-size: 1rem;
+}
+div.row{
+  padding: 20px 10px;
 }
 
 .hero{
@@ -762,6 +771,9 @@ div#signage{
 
 
 @media only screen and (min-width: 720px) {
+  /* .row{
+    padding: 0;
+  } */
 	div#service{
 		grid-template-columns: 1fr 1fr;
 	}

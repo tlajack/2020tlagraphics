@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import GridItem from "../components/gridItem"
 
 import placeholder from "../images/logo-optimized.svg"
 
@@ -20,48 +21,48 @@ const IndexPage = () => (
 		{/* <!-- SERVICES SECTION --> */}
 		<div className="row service_row">
 			<div id="service">
-				<div className="grid_items service service-01"><div id="merchandizing" className="items">Merchandizing</div></div>
-				<div className="grid_items service service-02"><div id="mark" className="items">Marketing Collateral</div></div>
-				<div className="grid_items service service-03"><div id="dec" className="items">Decorative Graphic Films/Accent Graphics</div></div>
-				<div className="grid_items service service-04"><div id="sig" className="items">Signage</div></div>
+				<GridItem itemClass="service" id="merchandizing">Merchandizing</GridItem>
+				<GridItem itemClass="service" id="mark">Marketing Collateral</GridItem>
+				<GridItem itemClass="service" id="dec">Decorative Graphic Films/Accent Graphics</GridItem>
+				<GridItem itemClass="service" id="sig">Signage</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Visual Mech SECTION --> */}
 		<div className="row merch_row">
 			<div id="merch">
-				<div className="grid_items merch merch-01"><div id="new" className="items">New Construction - Dental</div></div>
-				<div className="grid_items merch merch-02"><div id="manu" className="items">Manufacturing Partnerships, Furnishings, Furniture, Lectern Logos</div></div>
-				<div className="grid_items merch merch-03"><div id="ret" className="items">Retail POP</div></div>
+				<GridItem itemClass = "merch" id="new">New Construction - Dental</GridItem>
+				<GridItem itemClass = "merch" id="manu">Manufacturing Partnerships, Furnishings, Furniture, Lectern Logos</GridItem>
+				<GridItem itemClass = "merch" id="ret">Retail POP</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Marketing Collateral SECTION --> */}
 		<div className="row marketing_row">
 			<div id="marketing">
-				<div className="grid_items marketing marketing-01"><div id="cat" className="items">Catalogues, Brochures, Flyers</div></div>
-				<div className="grid_items marketing marketing-02"><div id="bac" className="items">Backlit / Frontlit Graphics</div></div>
-				<div className="grid_items marketing marketing-03"><div id="cust" className="items">Customized Branding</div></div>
-				<div className="grid_items marketing marketing-04"><div id="int" className="items">Internal Corporate Branding</div></div>
+				<GridItem itemClass = "marketing" id="cat">Catalogues, Brochures, Flyers</GridItem>
+				<GridItem itemClass = "marketing" id="bac">Backlit / Frontlit Graphics</GridItem>
+				<GridItem itemClass = "marketing" id="cust">Customized Branding</GridItem>
+				<GridItem itemClass = "marketing" id="int">Internal Corporate Branding</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Decorative SECTION --> */}
 		<div className="row decorative_row">
 			<div id="decorative">
-				<div className="grid_items decorative decorative-01"><div id="arc" className="items">Architectural Frosting</div></div>
-				<div className="grid_items decorative decorative-02"><div id="decw" className="items">Decorative Graphics, Wall Graphics Decoration</div></div>
-				<div className="grid_items decorative decorative-03"><div id="sec" className="items">Security Films</div></div>
-				<div className="grid_items decorative decorative-04"><div id="rec" className="items">Reception Graphics, Reception Logos</div></div>
+				<GridItem itemClass = "decorative" id="arc">Architectural Frosting</GridItem>
+				<GridItem itemClass = "decorative" id="decw">Decorative Graphics, Wall Graphics Decoration</GridItem>
+				<GridItem itemClass = "decorative" id="sec">Security Films</GridItem>
+				<GridItem itemClass = "decorative" id="rec">Reception Graphics, Reception Logos</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Signage SECTION --> */}
 		<div className="row signage_row">
 			<div id="signage">
-				<div className="grid_items signage signage-01"><div id="way" className="items">Way Finding</div></div>
-				<div className="grid_items signage signage-02"><div id="saf" className="items">Safety Signage</div></div>
-				<div className="grid_items signage signage-03"><div id="ins" className="items">Installation Services</div></div>
+				<GridItem itemClass = "signage" id="way">Way Finding</GridItem>
+				<GridItem itemClass = "signage" id="saf">Safety Signage</GridItem>
+				<GridItem itemClass = "signage" id="ins">Installation Services</GridItem>
 			</div>
 		</div>
 		
