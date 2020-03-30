@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div id="top">
         <main>{children}</main>
         <footer>
@@ -35,8 +35,8 @@ const Layout = ({ children }) => {
           </div>
 
           <a href="#top">
-            <span class="to-the-top-long">
-                To the top <span class="arrow" aria-hidden="true">↑</span>
+            <span className="to-the-top-long">
+                To the top <span className="arrow" aria-hidden="true">↑</span>
             </span>
           </a>
         </footer>

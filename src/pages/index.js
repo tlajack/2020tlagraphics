@@ -8,7 +8,7 @@ import GridItem from "../components/gridItem"
 
 import placeholder from "../images/logo-optimized.svg"
 
-const IndexPage = () => (
+const IndexPage=() => (
   <Layout>
     <SEO title="Home" />
 
@@ -31,38 +31,38 @@ const IndexPage = () => (
 		{/* <!-- Visual Mech SECTION --> */}
 		<div className="row merch_row">
 			<div id="merch">
-				<GridItem itemClass = "merch" id="new">New Construction - Dental</GridItem>
-				<GridItem itemClass = "merch" id="manu">Manufacturing Partnerships, Furnishings, Furniture, Lectern Logos</GridItem>
-				<GridItem itemClass = "merch" id="ret">Retail POP</GridItem>
+				<GridItem itemClass="merch" id="new">New Construction - Dental</GridItem>
+				<GridItem itemClass="merch" id="manu">Manufacturing Partnerships, Furnishings, Furniture, Lectern Logos</GridItem>
+				<GridItem itemClass="merch" id="ret">Retail POP</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Marketing Collateral SECTION --> */}
 		<div className="row marketing_row">
 			<div id="marketing">
-				<GridItem itemClass = "marketing" id="cat">Catalogues, Brochures, Flyers</GridItem>
-				<GridItem itemClass = "marketing" id="bac">Backlit / Frontlit Graphics</GridItem>
-				<GridItem itemClass = "marketing" id="cust">Customized Branding</GridItem>
-				<GridItem itemClass = "marketing" id="int">Internal Corporate Branding</GridItem>
+				<GridItem itemClass="marketing" id="cat">Catalogues, Brochures, Flyers</GridItem>
+				<GridItem itemClass="marketing" id="bac">Backlit / Frontlit Graphics</GridItem>
+				<GridItem itemClass="marketing" id="cust">Customized Branding</GridItem>
+				<GridItem itemClass="marketing" id="int">Internal Corporate Branding</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Decorative SECTION --> */}
 		<div className="row decorative_row">
 			<div id="decorative">
-				<GridItem itemClass = "decorative" id="arc">Architectural Frosting</GridItem>
-				<GridItem itemClass = "decorative" id="decw">Decorative Graphics, Wall Graphics Decoration</GridItem>
-				<GridItem itemClass = "decorative" id="sec">Security Films</GridItem>
-				<GridItem itemClass = "decorative" id="rec">Reception Graphics, Reception Logos</GridItem>
+				<GridItem itemClass="decorative" id="arc">Architectural Frosting</GridItem>
+				<GridItem itemClass="decorative" id="decw">Decorative Graphics, Wall Graphics Decoration</GridItem>
+				<GridItem itemClass="decorative" id="sec">Security Films</GridItem>
+				<GridItem itemClass="decorative" id="rec">Reception Graphics, Reception Logos</GridItem>
 			</div>
 		</div>
 
 		{/* <!-- Signage SECTION --> */}
 		<div className="row signage_row">
 			<div id="signage">
-				<GridItem itemClass = "signage" id="way">Way Finding</GridItem>
-				<GridItem itemClass = "signage" id="saf">Safety Signage</GridItem>
-				<GridItem itemClass = "signage" id="ins">Installation Services</GridItem>
+				<GridItem itemClass="signage" id="way">Way Finding</GridItem>
+				<GridItem itemClass="signage" id="saf">Safety Signage</GridItem>
+				<GridItem itemClass="signage" id="ins">Installation Services</GridItem>
 			</div>
 		</div>
 		
