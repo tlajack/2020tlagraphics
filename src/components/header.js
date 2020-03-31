@@ -12,7 +12,7 @@ const Header = () => (
   <header id="header">
     <div className="container">
       <nav id='nav'>
-        <div className="menu-icons" onClick={clickHandler}>
+        <div className="menu-icons" role="button" tabIndex={0} onClick={clickHandler} onKeyDown={clickHandler}>
           <i className="icon icon-menu">&#10010;</i>
           <i className="icon icon-close">&#10006;</i>
         </div>
@@ -31,73 +31,73 @@ const Header = () => (
                 <Link to="/">Visual Merchandizing 
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
+                <ul className="sub-menu">
+                  <li>
+                    <Link to="/">New Construction - Dental</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Manufacturing Partnerships, Furnishings, Furniture, Lectern	Logos</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Retail POP</Link>
+                  </li>
+                </ul>
               </li>
-              <ul className="sub-menu">
-                <li>
-                  <Link to="/">New Construction - Dental</Link>
-                </li>
-                <li>
-                  <Link to="/">Manufacturing Partnerships, Furnishings, Furniture, Lectern	Logos</Link>
-                </li>
-                <li>
-                  <Link to="/">Retail POP</Link>
-                </li>
-              </ul>
               <li>
                 <Link to="/">Marketing Collateral 
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
+                <ul className="sub-menu">
+                  <li>
+                    <Link to="/">Catalogues, Brochures, Flyers</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Backlit / Frontlit Graphics</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Customized Branding</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Internal Corporate Branding</Link>
+                  </li>
+                </ul>
               </li>
-              <ul className="sub-menu">
-                <li>
-                  <Link to="/">Catalogues, Brochures, Flyers</Link>
-                </li>
-                <li>
-                  <Link to="/">Backlit / Frontlit Graphics</Link>
-                </li>
-                <li>
-                  <Link to="/">Customized Branding</Link>
-                </li>
-                <li>
-                  <Link to="/">Internal Corporate Branding</Link>
-                </li>
-              </ul>
               <li>
                 <Link to="/">Decorative Graphic Films/Accent Graphics 
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
+                <ul className="sub-menu">
+                  <li>
+                    <Link to="/">Architectural Frosting</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Decorative Graphics, Wall Graphics Decoration</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Security Films</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Reception Graphics, Reception Logos</Link>
+                  </li>
+                </ul>
               </li>
-              <ul className="sub-menu">
-                <li>
-                  <Link to="/">Architectural Frosting</Link>
-                </li>
-                <li>
-                  <Link to="/">Decorative Graphics, Wall Graphics Decoration</Link>
-                </li>
-                <li>
-                  <Link to="/">Security Films</Link>
-                </li>
-                <li>
-                  <Link to="/">Reception Graphics, Reception Logos</Link>
-                </li>
-              </ul>
               <li>
                 <Link to="/">Signage 
                   <i className="icon icon-dropdown">&#10167;</i>
                 
                 </Link>
+                <ul className="sub-menu">
+                  <li>
+                    <Link to="/">Way Finding</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Safety Signage</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Installation Services</Link>
+                  </li>
+                </ul>
               </li>
-              <ul className="sub-menu">
-                <li>
-                  <Link to="/">Way Finding</Link>
-                </li>
-                <li>
-                  <Link to="/">Safety Signage</Link>
-                </li>
-                <li>
-                  <Link to="/">Installation Services</Link>
-                </li>
-              </ul>
             </ul>
           </li>
           <li>
