@@ -4,7 +4,7 @@ module.exports = {
     description: `2020 version of tlagraphics.com`,
     author: `@tlagraphics`,
   },
-  pathPrefix: `/2020-a`,
+  // pathPrefix: `/2020-a`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
