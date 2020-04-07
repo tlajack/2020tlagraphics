@@ -1,0 +1,202 @@
+#tlaContainer {
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  -webkit-overflow-scrolling: touch;
+  height: 101vh;
+  width: 100vw;
+  background-color: white;
+  overflow-y: scroll;
+  /* display: flex;
+	flex-direction: column; */
+}
+
+#tlaContainer h1 {
+  color: #bbbaba;
+  font-size: 2em;
+  text-align: left;
+}
+
+.tlaSection {
+  height: 100vh;
+  min-width: 100vw;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.opener,
+.thanks {
+  color: white;
+}
+
+.whoweare,
+.whatwedo,
+.whychooseus {
+  flex-direction: row;
+  background-image: url("../images/bg-whoweare.jpg");
+  background-size: cover;
+}
+.thinkitSection {
+  background-image: url("../images/bg-doit.jpg");
+  background-size: cover;
+}
+.whowearePhotoContainer,
+.whychooseusPhotoContainer {
+  max-width: 40%;
+}
+.whoweareTextContainer,
+.whychooseusTextContainer {
+  padding: 0 2em;
+  text-align: left;
+}
+
+.whoweareTextContainer hr,
+.whatwedoTextContainer hr,
+.whychooseusTextContainer hr {
+  height: 0.5em;
+  color: #00a19b;
+  background-color: rgb(0, 161, 155);
+  width: 8em;
+}
+
+.whatwedoTextContainer {
+  padding: 0 2em;
+  width: 60%;
+}
+.whatwedoPhotoContainer {
+  width: 40%;
+}
+.whatwedoPhotoContainer img {
+  /* max-width: 70%; */
+  max-height: 90%;
+}
+
+strong {
+  color: #00a19b;
+  font-weight: inherit;
+}
+
+.parallelogram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  min-height: 70px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: #00a19b;
+  overflow: hidden;
+  position: relative;
+  margin: 0.5em;
+}
+.parallelogram p {
+  color: white;
+  transform: skew(-20deg, 0deg);
+  margin: 0;
+  padding: 0 2em;
+  text-align: center;
+}
+
+.thinkit,
+.thanksContainer {
+  max-width: 50em;
+  margin: 0 auto;
+}
+#tlaContainer .thinkit h1 {
+  text-align: center;
+}
+.brandContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.tlaBrands {
+  max-height: 4em;
+  margin: 3em auto;
+  max-width: 13em;
+}
+.signature {
+  max-width: 30em;
+}
+.brandSection,
+.promiseSection,
+.whatwedo,
+.keySection {
+  background: linear-gradient(
+    0deg,
+    rgba(230, 230, 230, 1) 0%,
+    rgba(255, 255, 255, 1) 10%
+  );
+}
+
+a {
+  color: #00a19b;
+  font-weight: bold;
+}
+
+.doitLead {
+  font-size: larger;
+  margin: 2em;
+}
+
+.doitRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doitColumn {
+  /* border: solid 1px #00a19b; */
+  padding: 0 1.5em;
+  text-align: left;
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .tlaLogo {
+    width: 60%;
+  }
+  .whowearePhotoContainer,
+  .whychooseusPhotoContainer {
+    max-width: 30%;
+  }
+  .parallelogram {
+    min-height: 40px;
+  }
+  .signature {
+    max-width: 15em;
+  }
+  .whatwedoPhotoContainer img {
+    /* max-width: 70%; */
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  html {
+    font-size: 60%;
+  }
+  .tlaLogo {
+    width: 100%;
+  }
+  .whowearePhotoContainer,
+  .whychooseusPhotoContainer {
+    max-width: 30%;
+  }
+  .brandContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tlaBrands {
+    max-height: 3em;
+    margin: 2em auto;
+    max-width: 10em;
+  }
+}
