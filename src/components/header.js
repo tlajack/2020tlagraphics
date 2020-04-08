@@ -7,6 +7,10 @@ const clickHandler = e => {
   document.getElementById("nav").classList.toggle("active")
 }
 
+const activeStyle = {
+  color: "rgb(0, 182, 182)",
+}
+
 const Header = () => (
   <header id="header">
     <div className="container">
@@ -115,13 +119,19 @@ const Header = () => (
             </ul>
           </li>
           <li>
-            <Link to="/">Blog</Link>
+            <Link to="/blog" activeStyle={activeStyle}>
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/about">About us</Link>
+            <Link to="/about" activeStyle={activeStyle}>
+              About us
+            </Link>
           </li>
           <li>
-            <Link to="/">Resource Center</Link>
+            <Link to="/resource" activeStyle={activeStyle}>
+              Resource Center
+            </Link>
           </li>
         </ul>
       </nav>

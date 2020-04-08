@@ -35,7 +35,7 @@ const IndexPage = () => (
 
     <BgSection className="tlaSection opener" bgImage="tlaOpenerImage">
       <img src={logo} className="tlaLogo" alt="TLA Graphics Logo" />
-      <p>Transforming Ideas into Stunning Visuals</p>
+      <p className="white_text">Transforming Ideas into Stunning Visuals</p>
     </BgSection>
 
     <div className="tlaSection whoweare">
@@ -243,7 +243,7 @@ const IndexPage = () => (
     </div>
 
     <BgSection className="tlaSection thanks" bgImage="tlaThanksImage">
-      <div className="thanksContainer">
+      <div className="thanksContainer white_text">
         <p>
           I would personally like to thank you for this opportunity. TLA’s
           objective is to become a valued resource partner that can assist with

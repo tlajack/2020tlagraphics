@@ -200,3 +200,7 @@ a {
     max-width: 10em;
   }
 }
+.white_text,
+.white_text p {
+  color: white;
+}
