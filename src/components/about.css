@@ -17,6 +17,9 @@
   text-align: left;
 }
 
+.tlaLogo {
+  max-height: 100%;
+}
 .tlaSection {
   height: 100vh;
   min-width: 100vw;

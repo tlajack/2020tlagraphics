@@ -25,22 +25,22 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
-      <div id="top">
-        <main>{children}</main>
-        <footer>
-          <div>
-          © {new Date().getFullYear()}, 
-          {` `+data.site.siteMetadata.title}
-          </div>
+      <Header id="top" />
+      <main>{children}</main>
+      <footer>
+        <div>
+          © {new Date().getFullYear()},{` ` + data.site.siteMetadata.title}
+        </div>
 
-          <a href="#top">
-            <span className="to-the-top-long">
-                To the top <span className="arrow" aria-hidden="true">↑</span>
+        <a href="#top">
+          <span className="to-the-top-long">
+            To the top{" "}
+            <span className="arrow" aria-hidden="true">
+              ↑
             </span>
-          </a>
-        </footer>
-      </div>
+          </span>
+        </a>
+      </footer>
     </>
   )
 }
