@@ -74,7 +74,6 @@ const BlogPage = () => (
       eget molestie. Nullam eu sem posuere, venenatis nulla in, convallis nibh.
       Proin vitae purus augue.
     </p>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

@@ -678,7 +678,7 @@ header ul {
 }
 .menu-icons {
   position: absolute;
-  top: 50%;
+  top: 2rem;
   right: 2rem;
   transform: translateY(-50%);
   cursor: pointer;

@@ -107,7 +107,6 @@ const ResourcePage = () => (
       finibus diam. Ut consequat, lorem sed cursus dapibus, justo urna rhoncus
       tellus, sit amet iaculis enim mauris vitae lacus.
     </p>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
