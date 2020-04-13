@@ -678,16 +678,19 @@ header ul {
 }
 .menu-icons {
   position: absolute;
-  top: 2rem;
+  top: 4rem;
   right: 2rem;
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1500;
+  outline: none;
+  user-select: none;
+
   /* display:none; */
 }
 
 .menu-icons i {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: white;
 }
 
