@@ -782,7 +782,7 @@ nav.active .icon-menu{
   transition: all 650ms ease;
   background-color: rgba(0, 0, 0, 0.5);
   /* color: white; */
-  /* font-size: .8em; */
+  /* font-size: 1em; */
 }
 
 .sub-menu .sub-menu {
@@ -817,10 +817,13 @@ nav.active .icon-menu{
     align-items: initial;
     background-color: #191919;
     z-index: 1000;
+    overflow-y: scroll;
   }
 
   .nav-list > li {
-    line-height: 90px;
+    /* line-height: 90px; */
+    font-size: 2em;
+    line-height: 2.4em;
   }
 
   .sub-menu {
