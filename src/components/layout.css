@@ -678,7 +678,7 @@ header ul {
 }
 .menu-icons {
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   right: 2rem;
   transform: translateY(-50%);
   cursor: pointer;
@@ -690,7 +690,7 @@ header ul {
 }
 
 .menu-icons i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -821,9 +821,8 @@ nav.active .icon-menu{
   }
 
   .nav-list > li {
-    /* line-height: 90px; */
-    font-size: 2em;
-    line-height: 2.4em;
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 
   .sub-menu {
