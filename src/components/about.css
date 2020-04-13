@@ -158,7 +158,10 @@ a {
   width: 33%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  html {
+    font-size: 60%;
+  }
   .tlaLogo {
     width: 60%;
   }
