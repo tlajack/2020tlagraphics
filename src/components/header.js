@@ -39,7 +39,7 @@ const Header = () => (
             <ul className="sub-menu">
               <li>
                 <Link to="/">
-                  Visual Merchandizing
+                  Visual Merchandising
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
                 <ul className="sub-menu">
