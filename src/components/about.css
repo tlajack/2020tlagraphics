@@ -222,6 +222,10 @@ a {
   .thanksContainer {
     width: 100%;
   }
+  .signature {
+    max-width: initial;
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
