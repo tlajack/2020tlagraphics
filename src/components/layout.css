@@ -943,7 +943,6 @@ div#service {
   grid-gap: 1em;
 }
 .service {
-  min-height: 250px;
   background-color: white;
 }
 
@@ -961,7 +960,22 @@ div#merch {
   min-height: 350px;
   background-color: white;
 }
-
+#merchandising,
+#dec,
+#mark,
+#sig {
+  width: 100%;
+}
+.service h1 {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 10px;
+  text-shadow: 1px 1px 5px black;
+}
 .marketing_row {
   background-color: #f0f0f0;
 }
@@ -1020,6 +1034,8 @@ div#signage {
   } */
   div#service {
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: initial;
   }
   div#merch {
     grid-template-columns: 1fr 1fr 1fr;

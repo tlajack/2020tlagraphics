@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -8,7 +9,7 @@ import GridItem from "../components/gridItem"
 
 import placeholder from "../images/logo-optimized.svg"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
@@ -22,16 +23,39 @@ const IndexPage = () => (
       <div className="row service_row">
         <div id="service">
           <GridItem itemClass="service" id="merchandising">
-            Merchandising
+            <h1>Merchandising</h1>
+            <Img
+              fluid={data.canadaGoose.childImageSharp.fluid}
+              alt="Selection of merchandising items"
+            />
           </GridItem>
           <GridItem itemClass="service" id="mark">
-            Marketing Collateral
+            <h1>
+              Marketing <br />
+              Collateral
+            </h1>
+            <Img
+              fluid={data.collateral.childImageSharp.fluid}
+              alt="Selection of marketing materials"
+            />
           </GridItem>
           <GridItem itemClass="service" id="dec">
-            Decorative Graphic Films/Accent Graphics
+            <h1>
+              Decorative Graphic
+              <br />
+              Films
+            </h1>
+            <Img
+              fluid={data.decorative.childImageSharp.fluid}
+              alt="Selection of decorative graphics"
+            />
           </GridItem>
           <GridItem itemClass="service" id="sig">
-            Signage
+            <h1>Signage</h1>
+            <Img
+              fluid={data.signageImage.childImageSharp.fluid}
+              alt="Selection of signs"
+            />
           </GridItem>
         </div>
       </div>
@@ -184,5 +208,40 @@ const IndexPage = () => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    canadaGoose: file(
+      relativePath: { eq: "homepage/CanadaGoose-01-1200x800.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    decorative: file(relativePath: { eq: "homepage/IMG_2282-1200x800.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    collateral: file(relativePath: { eq: "homepage/collateral-1200x800.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    signageImage: file(relativePath: { eq: "homepage/signage-1200x800.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
