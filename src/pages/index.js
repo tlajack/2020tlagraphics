@@ -41,9 +41,8 @@ const IndexPage = ({ data }) => (
           </GridItem>
           <GridItem itemClass="service" id="dec">
             <h1>
-              Decorative Graphic
-              <br />
-              Films
+              Decorative
+              <br /> Graphic Films
             </h1>
             <Img
               fluid={data.decorative.childImageSharp.fluid}
