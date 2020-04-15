@@ -765,9 +765,9 @@ nav.active .icon-menu{
   color: teal;
 }
 
-.nav-list > li > ul {
-  /* display:none; */
-}
+/* .nav-list > li > ul {
+  display:none;
+} */
 
 .sub-menu {
   width: 250px;
