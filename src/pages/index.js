@@ -21,6 +21,7 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- SERVICES SECTION --> */}
       <div className="row service_row">
+        <h1 className="sectionTitle">Services</h1>
         <div id="service">
           <GridItem itemClass="service" id="merchandising">
             <h1>Merchandising</h1>
@@ -45,7 +46,7 @@ const IndexPage = ({ data }) => (
               <br /> Graphic Films
             </h1>
             <Img
-              fluid={data.decorative.childImageSharp.fluid}
+              fluid={data.frostImage.childImageSharp.fluid}
               alt="Selection of decorative graphics"
             />
           </GridItem>
@@ -63,13 +64,28 @@ const IndexPage = ({ data }) => (
       <div className="row merch_row">
         <div id="merch">
           <GridItem itemClass="merch" id="new">
-            New Construction - Dental
+            <h1 className="sectionTitle">Dental</h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="Selection of signs"
+            />
           </GridItem>
           <GridItem itemClass="merch" id="manu">
-            Manufacturing Partnerships, Furnishings, Furniture, Lectern Logos
+            <h1 className="sectionTitle">
+              Manufacturing <br />
+              Partnerships
+            </h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="merch" id="ret">
-            Retail POP
+            <h1 className="sectionTitle">Retail POP</h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
         </div>
       </div>
@@ -78,16 +94,45 @@ const IndexPage = ({ data }) => (
       <div className="row marketing_row">
         <div id="marketing">
           <GridItem itemClass="marketing" id="cat">
-            Catalogues, Brochures, Flyers
+            <h1 className="sectionTitle">
+              Catalogues, <br />
+              Brochures, <br />
+              Flyers
+            </h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="marketing" id="bac">
-            Backlit / Frontlit Graphics
+            <h1 className="sectionTitle">
+              Backlit / Frontlit <br />
+              Graphics
+            </h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="marketing" id="cust">
-            Customized Branding
+            <h1 className="sectionTitle">
+              Customized <br />
+              Branding
+            </h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="marketing" id="int">
-            Internal Corporate Branding
+            <h1 className="sectionTitle">
+              Internal Corporate <br />
+              Branding
+            </h1>
+            <Img
+              fluid={data.philipsShield.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
         </div>
       </div>
@@ -96,16 +141,42 @@ const IndexPage = ({ data }) => (
       <div className="row decorative_row">
         <div id="decorative">
           <GridItem itemClass="decorative" id="arc">
-            Architectural Frosting
+            <h1 className="sectionTitle">
+              Architectural <br />
+              Frosting
+            </h1>
+            {/* *********************** need fix ************************ */}
+            <Img
+              fluid={data.frostImage.childImageSharp.fluid}
+              alt="alt text tk"
+              className="architecturalFrosting"
+              imgStyle={{ objectFit: "contain", height: "auto !important" }}
+            />
           </GridItem>
           <GridItem itemClass="decorative" id="decw">
-            Decorative Graphics, Wall Graphics Decoration
+            <h1 className="sectionTitle">
+              Decorative Graphics, Wall Graphics Decoration
+            </h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="decorative" id="sec">
-            Security Films
+            <h1 className="sectionTitle">Security Films</h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="decorative" id="rec">
-            Reception Graphics, Reception Logos
+            <h1 className="sectionTitle">
+              Reception Graphics, Reception Logos
+            </h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
         </div>
       </div>
@@ -114,13 +185,25 @@ const IndexPage = ({ data }) => (
       <div className="row signage_row">
         <div id="signage">
           <GridItem itemClass="signage" id="way">
-            Way Finding
+            <h1 className="sectionTitle">Way Finding</h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="signage" id="saf">
-            Safety Signage
+            <h1 className="sectionTitle">Safety Signage</h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
           <GridItem itemClass="signage" id="ins">
-            Installation Services
+            <h1 className="sectionTitle">Installation Services</h1>
+            <Img
+              fluid={data.dentalImage.childImageSharp.fluid}
+              alt="alt text tk"
+            />
           </GridItem>
         </div>
       </div>
@@ -219,7 +302,7 @@ export const query = graphql`
         }
       }
     }
-    decorative: file(relativePath: { eq: "homepage/IMG_2282-1200x800.jpg" }) {
+    frostImage: file(relativePath: { eq: "homepage/IMG_2282-1200x800.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
@@ -234,6 +317,22 @@ export const query = graphql`
       }
     }
     signageImage: file(relativePath: { eq: "homepage/signage-1200x800.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dentalImage: file(relativePath: { eq: "homepage/IMG_6546-900x1200.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    philipsShield: file(
+      relativePath: { eq: "homepage/shield-clear-high-1000.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid

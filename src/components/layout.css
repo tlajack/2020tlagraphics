@@ -932,6 +932,10 @@ div.row {
   width: 100%;
 }
 
+.sectionTitle {
+  color: white;
+}
+
 .service_row {
   background-color: #00a19b;
 }
@@ -957,16 +961,16 @@ div#merch {
   grid-gap: 1em;
 }
 .merch {
-  min-height: 350px;
+  /* min-height: 350px; */
   background-color: white;
 }
-#merchandising,
-#dec,
-#mark,
-#sig {
+
+/* Class for each grid item   .items  */
+.items {
   width: 100%;
 }
-.service h1 {
+
+.items h1 {
   position: absolute;
   z-index: 10;
   color: white;
@@ -987,7 +991,7 @@ div#marketing {
   grid-gap: 1em;
 }
 .marketing {
-  min-height: 350px;
+  /* min-height: 350px; */
   background-color: white;
 }
 
@@ -1017,7 +1021,7 @@ div#signage {
   grid-gap: 1em;
 }
 .signage {
-  min-height: 350px;
+  /* min-height: 350px; */
   background-color: white;
 }
 
