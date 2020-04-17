@@ -62,77 +62,97 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- Visual Mech SECTION --> */}
       <div className="row merch_row">
+        <h1 className="sectionTitle">VISUAL MERCHANDISING</h1>
         <div id="merch">
           <GridItem itemClass="merch" id="new">
-            <h1 className="sectionTitle">Dental</h1>
             <Img
               fluid={data.dentalImage.childImageSharp.fluid}
               alt="Selection of signs"
             />
           </GridItem>
+
+          {/* ###########################################   Subsection */}
+          <GridItem itemClass="subsectionList">
+            <h1>New Construction – Dental</h1>
+            <ul>
+              <li>Dental office wall art </li>
+              <li>Dental office decals</li>
+              <li>Dental window graphics</li>
+              <li>Dental signage</li>
+            </ul>
+          </GridItem>
           <GridItem itemClass="merch" id="manu">
-            <h1 className="sectionTitle">
-              Manufacturing <br />
-              Partnerships
-            </h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.manufacturingImage.childImageSharp.fluid}
               alt="alt text tk"
             />
           </GridItem>
+
+          <GridItem itemClass="subsectionList">
+            <h1>MANUFACTURING PARTNERSHIPS</h1>
+            <ul>
+              <li>Furnishings</li>
+              <li>Furniture</li>
+              <li>Lectern Logos</li>
+              <li>Custom podium decal</li>
+              <li>Podium sign</li>
+              <li>Reusable / detachable / removeable podium sign</li>
+            </ul>
+          </GridItem>
+
           <GridItem itemClass="merch" id="ret">
-            <h1 className="sectionTitle">Retail POP</h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.retailImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+          </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Retail POP</h1>
+            <ul>
+              <li>POP Signage and graphics</li>
+              <li>POP display / POP displays</li>
+              <li>Point of sale display ideas </li>
+              <li>Point of purchase examples </li>
+              <li>Types of POP material / POP material examples</li>
+            </ul>
           </GridItem>
         </div>
       </div>
 
       {/* <!-- Marketing Collateral SECTION --> */}
       <div className="row marketing_row">
+        <h1 className="sectionTitle">MARKETING COLLATERAL</h1>
         <div id="marketing">
           <GridItem itemClass="marketing" id="cat">
-            <h1 className="sectionTitle">
-              Catalogues, <br />
-              Brochures, <br />
-              Flyers
-            </h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.catalogueImage.childImageSharp.fluid}
               alt="alt text tk"
             />
           </GridItem>
-          <GridItem itemClass="marketing" id="bac">
-            <h1 className="sectionTitle">
-              Backlit / Frontlit <br />
-              Graphics
-            </h1>
-            <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
-              alt="alt text tk"
-            />
+          <GridItem itemClass="subsectionList">
+            <h1>Catalogues, Brochures, Flyers</h1>
+            <ul>
+              <li>Catalogue design and print</li>
+              <li>Catalogue design and print services</li>
+              <li>Catalogue design services</li>
+            </ul>
           </GridItem>
-          <GridItem itemClass="marketing" id="cust">
-            <h1 className="sectionTitle">
-              Customized <br />
-              Branding
-            </h1>
-            <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
-              alt="alt text tk"
-            />
-          </GridItem>
+
           <GridItem itemClass="marketing" id="int">
-            <h1 className="sectionTitle">
-              Internal Corporate <br />
-              Branding
-            </h1>
             <Img
               fluid={data.philipsShield.childImageSharp.fluid}
               alt="alt text tk"
             />
+          </GridItem>
+
+          <GridItem itemClass="subsectionList">
+            <h1>Customized Branding</h1>
+            <ul>
+              <li>Internal Corporate Branding</li>
+              <li>Company logo design</li>
+              <li>Custom award design and fabrication</li>
+              <li>Custom corporate awards</li>
+            </ul>
           </GridItem>
         </div>
       </div>
@@ -141,26 +161,40 @@ const IndexPage = ({ data }) => (
       <div className="row decorative_row">
         <div id="decorative">
           <GridItem itemClass="decorative" id="arc">
-            <h1 className="sectionTitle">
-              Architectural <br />
-              Frosting
-            </h1>
             {/* *********************** need fix ************************ */}
             <Img
-              fluid={data.frostImage.childImageSharp.fluid}
+              fluid={data.glassImage.childImageSharp.fluid}
               alt="alt text tk"
               className="architecturalFrosting"
               imgStyle={{ objectFit: "contain", height: "auto !important" }}
             />
           </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Architectural Frosting</h1>
+            <ul>
+              <li>Decorative glass finishes</li>
+              <li>Architectural window film</li>
+              <li>Architectural film</li>
+              <li>Office glass design</li>
+              <li>Office glass door design / Best office glass design </li>
+              <li>Frosted glass door design</li>
+            </ul>
+          </GridItem>
           <GridItem itemClass="decorative" id="decw">
-            <h1 className="sectionTitle">
-              Decorative Graphics, Wall Graphics Decoration
-            </h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.largeWallImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+          </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Decorative Graphics / Wall Graphics Decoration</h1>
+            <ul>
+              <li>Custom wall graphics</li>
+              <li>Large wall graphics</li>
+              <li>Custom wall wrap</li>
+              <li>Wall graphics for business / office</li>
+              <li>Wall and floor decals</li>
+            </ul>
           </GridItem>
           <GridItem itemClass="decorative" id="sec">
             <h1 className="sectionTitle">Security Films</h1>
@@ -332,6 +366,49 @@ export const query = graphql`
     }
     philipsShield: file(
       relativePath: { eq: "homepage/shield-clear-high-1000.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    manufacturingImage: file(
+      relativePath: { eq: "homepage/palmieri-navigate-infoDesk.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    retailImage: file(relativePath: { eq: "homepage/IMG_7353-hd.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    catalogueImage: file(
+      relativePath: { eq: "homepage/nathan-anderson-gIzUiKf4hp8-unsplash.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    glassImage: file(
+      relativePath: { eq: "homepage/benjamin-child-0sT9YhNgSEs-unsplash.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    largeWallImage: file(
+      relativePath: { eq: "homepage/scott-webb-NQymDb5XqC4-unsplash.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1200) {

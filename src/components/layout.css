@@ -980,8 +980,16 @@ div#merch {
   margin: 10px;
   text-shadow: 1px 1px 5px black;
 }
+.subsectionList * {
+  color: rgb(228, 228, 228);
+  text-align: initial;
+}
+
+.subsectionList h1 {
+  position: initial;
+}
 .marketing_row {
-  background-color: #f0f0f0;
+  background-color: darkslategrey;
 }
 div#marketing {
   max-width: 800px;
@@ -1042,7 +1050,7 @@ div#signage {
     max-width: initial;
   }
   div#merch {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   div#marketing {
     grid-template-columns: 1fr 1fr;
