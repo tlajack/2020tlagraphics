@@ -978,7 +978,14 @@ div#merch {
   text-transform: uppercase;
   text-align: left;
   margin: 10px;
+}
+#service h1 {
   text-shadow: 1px 1px 5px black;
+}
+
+.items li,
+.items ul {
+  margin-bottom: unset;
 }
 .subsectionList * {
   color: rgb(228, 228, 228);
@@ -1014,7 +1021,7 @@ div#decorative {
   grid-gap: 1em;
 }
 .decorative {
-  min-height: 350px;
+  /* min-height: 350px; */
   background-color: white;
 }
 
@@ -1059,6 +1066,6 @@ div#signage {
     grid-template-columns: 1fr 1fr;
   }
   div#signage {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }

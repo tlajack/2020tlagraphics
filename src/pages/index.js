@@ -159,6 +159,9 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- Decorative SECTION --> */}
       <div className="row decorative_row">
+        <h1 className="sectionTitle">
+          DECORATIVE GRAPHIC FILMS / ACCENT GRAPHICS
+        </h1>
         <div id="decorative">
           <GridItem itemClass="decorative" id="arc">
             {/* *********************** need fix ************************ */}
@@ -197,47 +200,92 @@ const IndexPage = ({ data }) => (
             </ul>
           </GridItem>
           <GridItem itemClass="decorative" id="sec">
-            <h1 className="sectionTitle">Security Films</h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.securityFilmImage.childImageSharp.fluid}
               alt="alt text tk"
             />
           </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Security Films</h1>
+            <ul>
+              <li>Commercial safety window film</li>
+              <li>Commercial window films</li>
+              <li>Safety and security window film</li>
+              <li>Related search term: frosted window film</li>
+            </ul>
+          </GridItem>
+
           <GridItem itemClass="decorative" id="rec">
-            <h1 className="sectionTitle">
-              Reception Graphics, Reception Logos
-            </h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.receptionImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+          </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Reception Graphics, Reception Logos</h1>
+            <ul>
+              <li>Reception logo design</li>
+              <li>Reception logo wall</li>
+              <li>Reception logo signage</li>
+              <li>Reception logo sign</li>
+            </ul>
           </GridItem>
         </div>
       </div>
 
       {/* <!-- Signage SECTION --> */}
       <div className="row signage_row">
+        <h1 className="sectionTitle">SIGNAGE</h1>
         <div id="signage">
           <GridItem itemClass="signage" id="way">
-            <h1 className="sectionTitle">Way Finding</h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.wayfindingImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+          </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Way Finding</h1>
+            <ul>
+              <li>Wayfinding and sign design</li>
+              <li>Wayfinding signage systems</li>
+              <li>Digital wayfinding signage</li>
+              <li>Wayfinding signage design firms</li>
+              <li>Signage and wayfinding consultants</li>
+              <li>Environmental graphic design firms</li>
+              <li>Wayfinding firms</li>
+            </ul>
           </GridItem>
           <GridItem itemClass="signage" id="saf">
-            <h1 className="sectionTitle">Safety Signage</h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.safetyImage.childImageSharp.fluid}
               alt="alt text tk"
             />
           </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Safety Signage</h1>
+            <ul>
+              <li>Workplace safety signage</li>
+              <li>Construction safety signs</li>
+              <li>Custom safety signs</li>
+              <li>Custom metal / magnetic safety signs</li>
+              <li>Industrial safety signs</li>
+              <li>Safety signs and workplace signs</li>
+            </ul>
+          </GridItem>
           <GridItem itemClass="signage" id="ins">
-            <h1 className="sectionTitle">Installation Services</h1>
             <Img
-              fluid={data.dentalImage.childImageSharp.fluid}
+              fluid={data.installationImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+          </GridItem>
+          <GridItem itemClass="subsectionList">
+            <h1>Installation Services</h1>
+            <ul>
+              <li>Reception logo design</li>
+              <li>Reception logo wall</li>
+              <li>Reception logo signage</li>
+              <li>Reception logo sign</li>
+            </ul>
           </GridItem>
         </div>
       </div>
@@ -409,6 +457,47 @@ export const query = graphql`
     }
     largeWallImage: file(
       relativePath: { eq: "homepage/scott-webb-NQymDb5XqC4-unsplash.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    securityFilmImage: file(
+      relativePath: { eq: "homepage/AdobeStock_129916357_Preview.jpeg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    receptionImage: file(relativePath: { eq: "homepage/reception.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    safetyImage: file(relativePath: { eq: "homepage/coronaSign.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wayfindingImage: file(
+      relativePath: { eq: "homepage/hello-i-m-nik-mTehrY1mH-s-unsplash.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    installationImage: file(
+      relativePath: { eq: "homepage/jilbert-ebrahimi-BmDaLayzhc0-unsplash.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1200) {
