@@ -292,88 +292,104 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- FOOTER SECTION --> */}
       <div className="footer">
-        <h3>Services</h3>
-        <ul>
-          <li>
-            <Link to="#merch">Visual Merchandising</Link>
-          </li>
+        <div>
+          <h3>Services</h3>
           <ul>
             <li>
-              <Link to="#new">New Construction - Dental</Link>
+              <Link to="#merch">Visual Merchandising</Link>
             </li>
+            <ul>
+              <li>
+                <Link to="#new">New Construction - Dental</Link>
+              </li>
+              <li>
+                <Link to="#manu">
+                  Manufacturing Partnerships, Furnishings, Furniture, Lectern
+                  Logos
+                </Link>
+              </li>
+              <li>
+                <Link to="#ret">Retail POP</Link>
+              </li>
+            </ul>
             <li>
-              <Link to="#manu">
-                Manufacturing Partnerships, Furnishings, Furniture, Lectern
-                Logos
+              <Link to="#marketing">Marketing Collateral</Link>
+            </li>
+            <ul>
+              <li>
+                <Link to="#cat">Catalogues, Brochures, Flyers</Link>
+              </li>
+              <li>
+                <Link to="#bac">Backlit / Frontlit Graphics</Link>
+              </li>
+              <li>
+                <Link to="#cust">Customized Branding</Link>
+              </li>
+              <li>
+                <Link to="#int">Internal Corporate Branding</Link>
+              </li>
+            </ul>
+            <li>
+              <Link to="#decorative">
+                Decorative Graphic Films/Accent Graphics
               </Link>
             </li>
+            <ul>
+              <li>
+                <Link to="#arc">Architectural Frosting</Link>
+              </li>
+              <li>
+                <Link to="#decw">
+                  Decorative Graphics, Wall Graphics Decoration
+                </Link>
+              </li>
+              <li>
+                <Link to="#sec">Security Films</Link>
+              </li>
+              <li>
+                <Link to="#rec">Reception Graphics, Reception Logos</Link>
+              </li>
+            </ul>
             <li>
-              <Link to="#ret">Retail POP</Link>
+              <Link to="#signage">Signage</Link>
             </li>
+            <ul>
+              <li>
+                <Link to="#way">Way Finding</Link>
+              </li>
+              <li>
+                <Link to="#saf">Safety Signage</Link>
+              </li>
+              <li>
+                <Link to="#ins">Installation Services</Link>
+              </li>
+            </ul>
           </ul>
-          <li>
-            <Link to="#marketing">Marketing Collateral</Link>
-          </li>
-          <ul>
-            <li>
-              <Link to="#cat">Catalogues, Brochures, Flyers</Link>
-            </li>
-            <li>
-              <Link to="#bac">Backlit / Frontlit Graphics</Link>
-            </li>
-            <li>
-              <Link to="#cust">Customized Branding</Link>
-            </li>
-            <li>
-              <Link to="#int">Internal Corporate Branding</Link>
-            </li>
-          </ul>
-          <li>
-            <Link to="#decorative">
-              Decorative Graphic Films/Accent Graphics
-            </Link>
-          </li>
-          <ul>
-            <li>
-              <Link to="#arc">Architectural Frosting</Link>
-            </li>
-            <li>
-              <Link to="#decw">
-                Decorative Graphics, Wall Graphics Decoration
-              </Link>
-            </li>
-            <li>
-              <Link to="#sec">Security Films</Link>
-            </li>
-            <li>
-              <Link to="#rec">Reception Graphics, Reception Logos</Link>
-            </li>
-          </ul>
-          <li>
-            <Link to="#signage">Signage</Link>
-          </li>
-          <ul>
-            <li>
-              <Link to="#way">Way Finding</Link>
-            </li>
-            <li>
-              <Link to="#saf">Safety Signage</Link>
-            </li>
-            <li>
-              <Link to="#ins">Installation Services</Link>
-            </li>
-          </ul>
-        </ul>
 
-        <h3>
-          <Link to="/blog">Blog</Link>
-        </h3>
-        <h3>
-          <Link to="/about">About us</Link>
-        </h3>
-        <h3>
-          <Link to="/resource">Resource Center</Link>
-        </h3>
+          <h3>
+            <Link to="/blog">Blog</Link>
+          </h3>
+          <h3>
+            <Link to="/about">About us</Link>
+          </h3>
+          <h3>
+            <Link to="/resource">Resource Center</Link>
+          </h3>
+        </div>
+        <div>
+          <a
+            href="https://twitter.com/tlagraphics?ref_src=twsrc%5Etfw"
+            className="twitter-follow-button"
+            data-show-count="false"
+          >
+            Follow @tlagraphics
+          </a>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charSet="utf-8"
+          ></script>
+        </div>
       </div>
     </div>
   </Layout>
