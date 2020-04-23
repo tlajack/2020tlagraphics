@@ -11,7 +11,7 @@ import snap from "../images/icon-snap.svg"
 import Logo from "../images/logo-white.svg"
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout id="antimicrobialMain">
     <SEO title="Antimicrobial Film" />
     <div
       style={{
@@ -23,41 +23,45 @@ const IndexPage = ({ data }) => (
         <img className="topLogo" src={Logo} alt="TLA Graphics Logo" />
       </a>
     </div>
-    <h1>Antimicrobial Film</h1>
-    <h2>Characteristics of Antimicrobial Film</h2>
-    <p>
-      According to research, including copper and copper alloy, 'antimicrobial
-      copper' rapidly deactivated the coronavirus within a couple minutes when
-      the coronavirus touched the surface of the copper.
-    </p>
-    <h2>Touch with Confidence</h2>
-    <div className="antimicrobial_images">
-      <div>
-        <img src={virus} alt="antimicrobial icon" />
-        <h3>Antimicrobial</h3>
-      </div>
 
-      <div>
-        <img src={snap} alt="easy-to-use icon" />
-        <h3>Easy to Use</h3>
-      </div>
+    <div className="antimicrobial_infoRow">
+      <h1>Antimicrobial Film</h1>
+      <h2>Characteristics of Antimicrobial Film</h2>
+      <p>
+        According to research, including copper and copper alloy, 'antimicrobial
+        copper' rapidly deactivated the coronavirus within a couple minutes when
+        the coronavirus touched the surface of the copper.
+      </p>
+      <h2>Touch with Confidence</h2>
+      <div className="antimicrobial_images">
+        <div>
+          <img src={virus} alt="antimicrobial icon" />
+          <h3>Antimicrobial</h3>
+        </div>
 
-      <div>
-        <img src={shield} alt="shield icon" />
-        <h3>Safe & Effective</h3>
+        <div>
+          <img src={snap} alt="easy-to-use icon" />
+          <h3>Easy to Use</h3>
+        </div>
+
+        <div>
+          <img src={shield} alt="shield icon" />
+          <h3>Safe & Effective</h3>
+        </div>
       </div>
+      <h2>Semi-permanent period of use</h2>
+      <p>
+        The antimicrobial effect is everlasting (Please change the product
+        depending on the damage of the film, such as holes, scratches and
+        abrasion).
+      </p>
+      <h2>Superior bacteria extermination effect</h2>
+      <p>
+        It continuously exterminates the infectious viruses and refrains the
+        division and dissemination of the viruses.
+      </p>
     </div>
-    <h2>Semi-permanent period of use</h2>
-    <p>
-      The antimicrobial effect is everlasting (Please change the product
-      depending on the damage of the film, such as holes, scratches and
-      abrasion).
-    </p>
-    <h2>Superior bacteria extermination effect</h2>
-    <p>
-      It continuously exterminates the infectious viruses and refrains the
-      division and dissemination of the viruses.
-    </p>
+
     <div className="antimicrobial_infoRow antimicrobial_section_construction">
       <h2>Construction & Characteristics</h2>
       <p>
