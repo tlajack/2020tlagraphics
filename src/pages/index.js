@@ -18,7 +18,18 @@ const IndexPage = ({ data }) => (
       <div className="hero">
         <img className="placeholder" src={placeholder} alt="" />
       </div>
+      <div id="news">
+        <h1>News</h1>
+        <ul>
+          <li>
+            <Link to="/faceshields">faceshields</Link>
+          </li>
 
+          <li>
+            <Link to="/antimicrobial">Antimicrobial Film</Link>
+          </li>
+        </ul>
+      </div>
       {/* <!-- SERVICES SECTION --> */}
       <div className="row service_row">
         <h1 className="sectionTitle">Services</h1>

@@ -1,0 +1,41 @@
+.shieldImage + .shieldImage {
+  margin-top: 1em;
+}
+
+.topLogo {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+footer {
+  font-size: 12px;
+}
+
+a {
+  color: teal;
+}
+
+a:hover {
+  color: gray;
+}
+
+#warning {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  border-radius: 21px;
+}
+#warnig img {
+  min-width: 250px;
+}
+#warning p {
+  padding: 1rem;
+  margin: 0;
+}

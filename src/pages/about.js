@@ -121,7 +121,7 @@ const IndexPage = () => (
     </div>
 
     <div className="tlaSection promiseSection">
-      <h1>Our Promise to You</h1>
+      <h1>Our promise to you</h1>
 
       <div className="parallelogram">
         <p>Never sacrifice speed over quality</p>
@@ -137,7 +137,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="tlaSection brandSection">
-      <h1>Brands We Work For </h1>
+      <h1>Companies we work with </h1>
       <div className="brandContainer">
         <img
           src={philips}
@@ -209,7 +209,7 @@ const IndexPage = () => (
 
     <div className="tlaSection thinkitSection">
       <div className="thinkit">
-        <h1>If you can think it, we can do it.</h1>
+        <h1>You imagine it, we produce it.</h1>
         <p className="doitLead">
           We provide creative solutions for a multitude of truly unique and
           custom projects. From custom single-piece orders to duplicates in the
