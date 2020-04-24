@@ -1,6 +1,18 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterMentionButton,
+  TwitterTweetEmbed,
+  TwitterMomentShare,
+  TwitterDMButton,
+  TwitterVideoEmbed,
+  TwitterOnAirButton,
+} from "react-twitter-embed"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -428,18 +440,11 @@ const IndexPage = ({ data }) => (
           </h3> */}
         </div>
         <div>
-          <a
-            href="https://twitter.com/tlagraphics?ref_src=twsrc%5Etfw"
-            className="twitter-follow-button"
-            data-show-count="false"
-          >
-            Follow @tlagraphics
-          </a>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charSet="utf-8"
-          ></script>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="tlagraphics"
+            options={{ height: 400 }}
+          />
         </div>
       </div>
     </div>
