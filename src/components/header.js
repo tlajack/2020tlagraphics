@@ -32,13 +32,13 @@ const Header = () => (
         </div>
         <ul className="nav-list">
           <li>
-            <Link to="/">
-              Services
-              <i className="icon icon-dropdown">&#10167;</i>
+            <Link to="/" activeStyle={activeStyle}>
+              Home
+              {/* <i className="icon icon-dropdown">&#10167;</i> */}
             </Link>
-            <ul className="sub-menu">
+            {/* <ul className="sub-menu">
               <li>
-                <Link to="/">
+                <Link to="#merchandisingSection">
                   Visual Merchandising
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
@@ -58,7 +58,7 @@ const Header = () => (
                 </ul>
               </li>
               <li>
-                <Link to="/">
+                <Link to="#marketingSection">
                   Marketing Collateral
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
@@ -78,7 +78,7 @@ const Header = () => (
                 </ul>
               </li>
               <li>
-                <Link to="/">
+                <Link to="#decorativeSection">
                   Decorative Graphic Films/Accent Graphics
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
@@ -100,7 +100,7 @@ const Header = () => (
                 </ul>
               </li>
               <li>
-                <Link to="/">
+                <Link to="#signageSection">
                   Signage
                   <i className="icon icon-dropdown">&#10167;</i>
                 </Link>
@@ -116,23 +116,23 @@ const Header = () => (
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li>
+          {/* <li>
             <Link to="/blog" activeStyle={activeStyle}>
               Blog
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/about" activeStyle={activeStyle}>
               About us
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/resource" activeStyle={activeStyle}>
               Resource Center
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

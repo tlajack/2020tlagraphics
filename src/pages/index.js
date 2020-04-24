@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import GridItem from "../components/gridItem"
 
 import placeholder from "../images/logo-optimized.svg"
+import virus from "../images/icon-virus.svg"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,17 +19,56 @@ const IndexPage = ({ data }) => (
       <div className="hero">
         <img className="placeholder" src={placeholder} alt="" />
       </div>
+      {/* <!-- NEWS SECTION --> */}
       <div id="news">
         <h1>News</h1>
-        <ul>
-          <li>
-            <Link to="/faceshields">faceshields</Link>
-          </li>
-
-          <li>
-            <Link to="/antimicrobial">Antimicrobial Film</Link>
-          </li>
-        </ul>
+        <div className="newsItem">
+          <div className="newsPhoto">
+            <Link to="/faceshields">
+              <Img
+                fluid={data.faceshieldImage.childImageSharp.fluid}
+                alt="faceshield image"
+              />
+            </Link>
+          </div>
+          <div className="newsCopy">
+            <p>
+              TLA Graphics is contributing with PPE manufacturing by using the
+              same tools and material we have used for years producing POP
+              products and displays. Click <Link to="/faceshields">here</Link>{" "}
+              for more info: <Link to="/faceshields">Faceshields</Link>
+            </p>
+          </div>
+        </div>
+        <div className="newsItem">
+          <div className="newsPhoto">
+            <Link to="/antimicrobial">
+              <img src={virus} alt="icon representing virus" />
+            </Link>
+          </div>
+          <div className="newsCopy">
+            <p>
+              Keep high-traffic public areas safer with{" "}
+              <Link to="/antimicrobial">Antimicrobial Film</Link>. We customize
+              and instal.
+            </p>
+          </div>
+        </div>
+        <div className="newsItem">
+          <div className="newsPhoto">
+            <Img
+              fluid={data.amdShield.childImageSharp.fluid}
+              alt="faceshield image"
+            />
+          </div>
+          <div className="newsCopy">
+            <p>
+              TLA produces and installs customized plexiglass shields.{" "}
+              <a href="mailto:info@tlagraphics.com">Contact us</a> for more
+              details.
+            </p>
+          </div>
+        </div>
       </div>
       {/* <!-- SERVICES SECTION --> */}
       <div className="row service_row">
@@ -72,7 +112,7 @@ const IndexPage = ({ data }) => (
       </div>
 
       {/* <!-- Visual Mech SECTION --> */}
-      <div className="row merch_row">
+      <div className="row merch_row" id="merchandisingSection">
         <h1 className="sectionTitle">VISUAL MERCHANDISING</h1>
         <div id="merch">
           <GridItem itemClass="merch" id="new">
@@ -131,7 +171,7 @@ const IndexPage = ({ data }) => (
       </div>
 
       {/* <!-- Marketing Collateral SECTION --> */}
-      <div className="row marketing_row">
+      <div className="row marketing_row" id="marketingSection">
         <h1 className="sectionTitle">MARKETING COLLATERAL</h1>
         <div id="marketing">
           <GridItem itemClass="marketing" id="cat">
@@ -169,7 +209,7 @@ const IndexPage = ({ data }) => (
       </div>
 
       {/* <!-- Decorative SECTION --> */}
-      <div className="row decorative_row">
+      <div className="row decorative_row" id="decorativeSection">
         <h1 className="sectionTitle">
           DECORATIVE GRAPHIC FILMS / ACCENT GRAPHICS
         </h1>
@@ -217,12 +257,12 @@ const IndexPage = ({ data }) => (
             />
           </GridItem>
           <GridItem itemClass="subsectionList">
-            <h1>Security Films</h1>
+            <h1>Privacy Films</h1>
             <ul>
               <li>Commercial safety window film</li>
               <li>Commercial window films</li>
-              <li>Safety and security window film</li>
-              <li>Related search term: frosted window film</li>
+              <li>Privacy and decorative window film</li>
+              <li>Frosted window film</li>
             </ul>
           </GridItem>
 
@@ -245,7 +285,7 @@ const IndexPage = ({ data }) => (
       </div>
 
       {/* <!-- Signage SECTION --> */}
-      <div className="row signage_row">
+      <div className="row signage_row" id="signageSection">
         <h1 className="sectionTitle">SIGNAGE</h1>
         <div id="signage">
           <GridItem itemClass="signage" id="way">
@@ -307,7 +347,7 @@ const IndexPage = ({ data }) => (
           <h3>Services</h3>
           <ul>
             <li>
-              <Link to="#merch">Visual Merchandising</Link>
+              <Link to="#merchandisingSection">Visual Merchandising</Link>
             </li>
             <ul>
               <li>
@@ -324,7 +364,7 @@ const IndexPage = ({ data }) => (
               </li>
             </ul>
             <li>
-              <Link to="#marketing">Marketing Collateral</Link>
+              <Link to="#marketingSection">Marketing Collateral</Link>
             </li>
             <ul>
               <li>
@@ -341,7 +381,7 @@ const IndexPage = ({ data }) => (
               </li>
             </ul>
             <li>
-              <Link to="#decorative">
+              <Link to="#decorativeSection">
                 Decorative Graphic Films/Accent Graphics
               </Link>
             </li>
@@ -362,7 +402,7 @@ const IndexPage = ({ data }) => (
               </li>
             </ul>
             <li>
-              <Link to="#signage">Signage</Link>
+              <Link to="#signageSection">Signage</Link>
             </li>
             <ul>
               <li>
@@ -377,15 +417,15 @@ const IndexPage = ({ data }) => (
             </ul>
           </ul>
 
-          <h3>
+          {/* <h3>
             <Link to="/blog">Blog</Link>
-          </h3>
+          </h3> */}
           <h3>
             <Link to="/about">About us</Link>
           </h3>
-          <h3>
+          {/* <h3>
             <Link to="/resource">Resource Center</Link>
-          </h3>
+          </h3> */}
         </div>
         <div>
           <a
@@ -497,9 +537,7 @@ export const query = graphql`
         }
       }
     }
-    securityFilmImage: file(
-      relativePath: { eq: "homepage/AdobeStock_129916357_Preview.jpeg" }
-    ) {
+    securityFilmImage: file(relativePath: { eq: "homepage/frosted-film.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
@@ -532,6 +570,22 @@ export const query = graphql`
     installationImage: file(
       relativePath: { eq: "homepage/jilbert-ebrahimi-BmDaLayzhc0-unsplash.jpg" }
     ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    faceshieldImage: file(
+      relativePath: { eq: "rendering-for-instructions.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    amdShield: file(relativePath: { eq: "homepage/amd-shield.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
