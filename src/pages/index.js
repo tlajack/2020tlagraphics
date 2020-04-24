@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GridItem from "../components/gridItem"
 
-import placeholder from "../images/logo-optimized.svg"
+// import placeholder from "../images/logo-optimized.svg"
 import virus from "../images/icon-virus.svg"
 
 const IndexPage = ({ data }) => (
@@ -16,9 +16,9 @@ const IndexPage = ({ data }) => (
 
     <div className="container">
       {/* <!-- HERO SECTION --> */}
-      <div className="hero">
+      {/* <div className="hero">
         <img className="placeholder" src={placeholder} alt="" />
-      </div>
+      </div> */}
       {/* <!-- NEWS SECTION --> */}
       <div id="news">
         <h1>News</h1>
@@ -50,7 +50,7 @@ const IndexPage = ({ data }) => (
             <p>
               Keep high-traffic public areas safer with{" "}
               <Link to="/antimicrobial">Antimicrobial Film</Link>. We customize
-              and instal.
+              and install.
             </p>
           </div>
         </div>
