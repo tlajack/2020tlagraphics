@@ -30,17 +30,28 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer>
         <div>
-          © {new Date().getFullYear()},{` ` + data.site.siteMetadata.title}
+          © {new Date().getFullYear()}, Built by
+          {` `}
+          <a href="https://www.tlagraphics.com">TLA Graphics</a>
         </div>
-
-        <a href="#top">
-          <span className="to-the-top-long">
-            To the top{" "}
-            <span className="arrow" aria-hidden="true">
-              ↑
+        <div>
+          <p>
+            <a href="tel:1-905-726-2600">+1 (905) 726-2600</a>
+          </p>
+          <p>
+            <a href="mailto:info@tlagraphics.com">info@tlagraphics.com</a>
+          </p>
+        </div>
+        <div>
+          <a href="#top">
+            <span className="to-the-top-long">
+              To the top{" "}
+              <span className="arrow" aria-hidden="true">
+                ↑
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
+        </div>{" "}
       </footer>
     </>
   )

@@ -1,18 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterFollowButton,
-  TwitterHashtagButton,
-  TwitterMentionButton,
-  TwitterTweetEmbed,
-  TwitterMomentShare,
-  TwitterDMButton,
-  TwitterVideoEmbed,
-  TwitterOnAirButton,
-} from "react-twitter-embed"
+import { TwitterTimelineEmbed } from "react-twitter-embed"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -443,7 +432,7 @@ const IndexPage = ({ data }) => (
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName="tlagraphics"
-            options={{ height: 400 }}
+            options={{ height: 600 }}
           />
         </div>
       </div>
