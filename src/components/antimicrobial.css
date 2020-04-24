@@ -30,9 +30,6 @@
   max-width: 960px;
   margin: auto;
 }
-.antimicrobial_infoRow * {
-  /* padding: 0 20px; */
-}
 
 .antimicrobial_infoRow h2,
 .antimicrobial_infoRow h3 {
