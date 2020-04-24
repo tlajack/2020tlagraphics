@@ -1052,18 +1052,17 @@ div#signage {
   margin: 0;
   border-radius: 1em;
 }
+#news h1 {
+  margin-top: 2em;
+  margin-bottom: 0;
+  text-align: center;
+}
 .newsItem {
-  /* background-color: antiquewhite; */
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* border: 3px solid teal; */
-  /* border-radius: 10px; */
   margin: 20px;
 }
 .newsPhoto {
-  /* padding: 20px; */
-  /* border: 20px solid antiquewhite; */
-  /* background-color: white; */
   align-self: center;
 }
 
@@ -1072,19 +1071,12 @@ div#signage {
   margin-left: 2em;
 }
 @media only screen and (min-width: 720px) {
-  /* .row{
-    padding: 0;
-  } */
-
   #news {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   #news h1 {
     grid-column: 1/3;
-    margin-top: 2em;
-    margin-bottom: 0;
-    text-align: center;
   }
   #news > div:nth-child(2) {
     grid-column: 1/3;
