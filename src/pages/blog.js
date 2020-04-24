@@ -9,7 +9,7 @@ import "../components/blog.css"
 
 const BlogEntry = props => {
   const additionalStyles = props.featured ? "featuredEntry" : ""
-  const allStyles = "blogEntry" + " " + additionalStyles
+  const allStyles = `blogEntry ${additionalStyles}`
   return (
     <div className={allStyles}>
       <Img
