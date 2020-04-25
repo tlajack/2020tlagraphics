@@ -30,9 +30,12 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer>
         <div>
-          © {new Date().getFullYear()}, Built by
-          {` `}
-          <a href="https://www.tlagraphics.com">TLA Graphics</a>
+          <p>
+            © {new Date().getFullYear()}, Built by
+            {` `}
+            <a href="https://www.tlagraphics.com">TLA Graphics</a>
+          </p>
+          <p>158 Don Hillock Dr. Unit 11, Aurora, ON L4G 0G9</p>
         </div>
         <div>
           <p>

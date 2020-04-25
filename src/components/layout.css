@@ -881,6 +881,14 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin: unset;
+}
+
+footer > * {
+  align-self: center;
+}
+
 body,
 * {
   padding: 0px;

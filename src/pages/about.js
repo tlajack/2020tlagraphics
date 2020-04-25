@@ -262,13 +262,13 @@ const IndexPage = () => (
           src={markSignature}
           alt="Signature Mark White"
         />
-        <p>
+        {/* <p>
           <a href="mailto:info@tlagraphics.ca">info@tlagraphics.ca</a>
-        </p>
-        <p>158 Don Hillock Dr. Unit 11, Aurora, ON L4G 0G9</p>
-        <p>
+        </p> */}
+        {/* <p>158 Don Hillock Dr. Unit 11, Aurora, ON L4G 0G9</p> */}
+        {/* <p>
           <a href="tel:905-726-2600">905.726.2600</a>
-        </p>
+        </p> */}
       </div>
     </BgSection>
   </Layout>
