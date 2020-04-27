@@ -153,9 +153,9 @@ const IndexPage = ({ data }) => (
               <li>Furnishings</li>
               <li>Furniture</li>
               <li>Lectern Logos</li>
-              <li>Custom podium decal</li>
-              <li>Podium sign</li>
-              <li>Reusable / detachable / removeable podium sign</li>
+              <li>Custom podium decals</li>
+              <li>Podium signs</li>
+              <li>Reusable / detachable / removeable podium signs</li>
             </ul>
           </GridItem>
 
@@ -253,8 +253,8 @@ const IndexPage = ({ data }) => (
             <ul>
               <li>Custom wall graphics</li>
               <li>Large wall graphics</li>
-              <li>Custom wall wrap</li>
-              <li>Wall graphics for business / office</li>
+              <li>Custom wall wraps</li>
+              <li>Wall graphics for businesses / offices</li>
               <li>Wall and floor decals</li>
             </ul>
           </GridItem>
@@ -267,10 +267,10 @@ const IndexPage = ({ data }) => (
           <GridItem itemClass="subsectionList">
             <h1>Privacy Films</h1>
             <ul>
-              <li>Commercial safety window film</li>
+              <li>Commercial safety window films</li>
               <li>Commercial window films</li>
-              <li>Privacy and decorative window film</li>
-              <li>Frosted window film</li>
+              <li>Privacy and decorative window films</li>
+              <li>Frosted window films</li>
             </ul>
           </GridItem>
 
