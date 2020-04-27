@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { TwitterTimelineEmbed } from "react-twitter-embed"
+import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -22,7 +23,13 @@ const IndexPage = ({ data }) => (
       </div> */}
       {/* <!-- NEWS SECTION --> */}
       <div id="news">
-        <h1>News</h1>
+        <BackgroundImage
+          className={"newsBanner"}
+          fluid={data.newsBanner.childImageSharp.fluid}
+        >
+          <h1>News</h1>
+        </BackgroundImage>
+
         <div className="newsItem">
           <div className="newsPhoto">
             <Link to="/faceshields">
@@ -587,6 +594,13 @@ export const query = graphql`
       }
     }
     amdShield: file(relativePath: { eq: "homepage/amd-shield.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    newsBanner: file(relativePath: { eq: "news-banner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
