@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import GridItem from "../components/gridItem"
 
-// import placeholder from "../images/logo-optimized.svg"
+import placeholder from "../images/logo-optimized.svg"
 import virus from "../images/icon-virus.svg"
 
 const IndexPage = ({ data }) => (
@@ -69,6 +69,13 @@ const IndexPage = ({ data }) => (
               details.
             </p>
           </div>
+        </div>
+        <div id="topTwitterFeed">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="tlagraphics"
+            options={{ height: 600 }}
+          />
         </div>
       </div>
       {/* <!-- SERVICES SECTION --> */}
@@ -428,12 +435,13 @@ const IndexPage = ({ data }) => (
             <Link to="/resource">Resource Center</Link>
           </h3> */}
         </div>
-        <div>
-          <TwitterTimelineEmbed
+        <div className="footerLogo">
+          {/* <TwitterTimelineEmbed
             sourceType="profile"
             screenName="tlagraphics"
             options={{ height: 600 }}
-          />
+          /> */}
+          <img className="placeholder" src={placeholder} alt="" />
         </div>
       </div>
     </div>
