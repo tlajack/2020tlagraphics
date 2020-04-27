@@ -27,7 +27,7 @@ import smokes from "../images/logos/smokes-logo.png"
 import tml from "../images/logos/tml-logo.png"
 import tfc from "../images/logos/torontoFC-logo.png"
 
-import "../components/about.css"
+require("../components/about.css")
 
 const IndexPage = () => (
   <Layout>

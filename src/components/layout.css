@@ -805,7 +805,7 @@ nav.active .icon-menu{
   visibility: visible;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 720px) {
   .nav-list {
     position: fixed;
     top: 0;
@@ -887,6 +887,7 @@ footer p {
 
 footer > * {
   align-self: center;
+  margin-bottom: 1em;
 }
 
 body,
