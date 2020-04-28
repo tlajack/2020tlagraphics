@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import Header from "./header"
 require("./layout.css")
@@ -22,7 +23,7 @@ const Layout = ({ children }) => {
           <p>
             © {new Date().getFullYear()}, Built by
             {` `}
-            <a href="https://www.tlagraphics.com">TLA Graphics</a>
+            <Link to="/">TLA Graphics</Link>
           </p>
           <p>158 Don Hillock Dr. Unit 11, Aurora, ON L4G 0G9</p>
         </div>
