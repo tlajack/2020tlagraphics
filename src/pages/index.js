@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
       {/* <!-- NEWS SECTION --> */}
       <div id="news">
         <BackgroundImage
-          className={"newsBanner"}
+          id={"newsBanner"}
           fluid={data.newsBanner.childImageSharp.fluid}
         >
           <h1>News</h1>
