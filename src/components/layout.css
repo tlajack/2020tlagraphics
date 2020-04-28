@@ -756,7 +756,7 @@ nav.active .icon-menu{
 
 .nav-list a {
   display: block;
-  padding: 0 0.5em;
+  padding: 0 2em;
   font-weight: bold;
   transition: color 650ms;
 }
