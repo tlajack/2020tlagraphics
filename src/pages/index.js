@@ -42,8 +42,8 @@ const IndexPage = ({ data }) => (
           <div className="newsCopy">
             <p>
               TLA Graphics is contributing to our frontline worker's safety with
-              PPE manufacturing. Click <Link to="/faceshields">here</Link> for
-              more info: <Link to="/faceshields">Faceshields</Link>
+              PPE manufacturing. Click here for more info:{" "}
+              <Link to="/faceshields">Faceshields</Link>
             </p>
           </div>
         </div>
