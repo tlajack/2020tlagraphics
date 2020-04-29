@@ -14,6 +14,22 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Proza Libre`,
+            // subsets: [`latin`],
+            variants: [`700`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`],
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
