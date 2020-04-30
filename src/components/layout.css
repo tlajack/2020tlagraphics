@@ -960,6 +960,10 @@ div.row {
 
 .sectionTitle {
   color: white;
+  text-align: center;
+  margin: 1em auto 1em;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
 .service_row {
@@ -972,9 +976,9 @@ div#service {
   grid-template-columns: 1fr;
   grid-gap: 1em;
 }
-.service {
+/* .service {
   background-color: white;
-}
+} */
 
 .merch_row {
   background-color: black;
@@ -996,7 +1000,7 @@ div#merch {
   width: 100%;
 }
 
-.items h1 {
+/* .items h1 {
   position: absolute;
   z-index: 10;
   color: white;
@@ -1004,9 +1008,11 @@ div#merch {
   text-transform: uppercase;
   text-align: left;
   margin: 10px;
-}
+} */
 #service h1 {
-  text-shadow: 1px 1px 5px black;
+  /* text-shadow: 1px 1px 5px black; */
+  color: white;
+  margin: 1em auto 0.5em;
 }
 
 .items li,

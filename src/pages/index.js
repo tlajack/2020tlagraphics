@@ -96,20 +96,14 @@ const IndexPage = ({ data }) => (
             />
           </GridItem>
           <GridItem itemClass="service" id="mark">
-            <h1>
-              Marketing <br />
-              Collateral
-            </h1>
+            <h1>Marketing Collateral</h1>
             <Img
               fluid={data.collateral.childImageSharp.fluid}
               alt="Selection of marketing materials"
             />
           </GridItem>
           <GridItem itemClass="service" id="dec">
-            <h1>
-              Decorative
-              <br /> Graphic Films
-            </h1>
+            <h1>Decorative Graphic Films</h1>
             <Img
               fluid={data.frostImage.childImageSharp.fluid}
               alt="Selection of decorative graphics"
