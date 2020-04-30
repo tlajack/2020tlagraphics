@@ -88,30 +88,34 @@ const IndexPage = ({ data }) => (
       <div className="row service_row">
         <h1 className="sectionTitle">Services</h1>
         <div id="service">
-          <GridItem itemClass="service" id="merchandising">
+          <GridItem id="merchandising">
             <h1>Merchandising</h1>
             <Img
+              className="gridImg"
               fluid={data.canadaGoose.childImageSharp.fluid}
               alt="Selection of merchandising items"
             />
           </GridItem>
-          <GridItem itemClass="service" id="mark">
+          <GridItem id="mark">
             <h1>Marketing Collateral</h1>
             <Img
+              className="gridImg"
               fluid={data.collateral.childImageSharp.fluid}
               alt="Selection of marketing materials"
             />
           </GridItem>
-          <GridItem itemClass="service" id="dec">
+          <GridItem id="dec">
             <h1>Decorative Graphic Films</h1>
             <Img
+              className="gridImg"
               fluid={data.frostImage.childImageSharp.fluid}
               alt="Selection of decorative graphics"
             />
           </GridItem>
-          <GridItem itemClass="service" id="sig">
+          <GridItem id="sig">
             <h1>Signage</h1>
             <Img
+              className="gridImg"
               fluid={data.signageImage.childImageSharp.fluid}
               alt="Selection of signs"
             />
@@ -123,14 +127,12 @@ const IndexPage = ({ data }) => (
       <div className="row merch_row" id="merchandisingSection">
         <h1 className="sectionTitle">VISUAL MERCHANDISING</h1>
         <div id="merch">
-          <GridItem itemClass="merch" id="new">
+          <GridItem itemClass="gridImg" id="new">
             <Img
               fluid={data.dentalImage.childImageSharp.fluid}
               alt="Selection of signs"
             />
           </GridItem>
-
-          {/* ###########################################   Subsection */}
           <GridItem itemClass="subsectionList">
             <h1>New Construction – Dental</h1>
             <ul>
@@ -140,7 +142,7 @@ const IndexPage = ({ data }) => (
               <li>Dental signage</li>
             </ul>
           </GridItem>
-          <GridItem itemClass="merch" id="manu">
+          <GridItem itemClass="gridImg" id="manu">
             <Img
               fluid={data.manufacturingImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -159,7 +161,7 @@ const IndexPage = ({ data }) => (
             </ul>
           </GridItem>
 
-          <GridItem itemClass="merch" id="ret">
+          <GridItem itemClass="gridImg" id="ret">
             <Img
               fluid={data.retailImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -182,7 +184,7 @@ const IndexPage = ({ data }) => (
       <div className="row marketing_row" id="marketingSection">
         <h1 className="sectionTitle">MARKETING COLLATERAL</h1>
         <div id="marketing">
-          <GridItem itemClass="marketing" id="cat">
+          <GridItem itemClass="gridImg" id="cat">
             <Img
               fluid={data.catalogueImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -197,7 +199,7 @@ const IndexPage = ({ data }) => (
             </ul>
           </GridItem>
 
-          <GridItem itemClass="marketing" id="int">
+          <GridItem itemClass="gridImg" id="int">
             <Img
               fluid={data.philipsShield.childImageSharp.fluid}
               alt="alt text tk"
@@ -222,8 +224,7 @@ const IndexPage = ({ data }) => (
           DECORATIVE GRAPHIC FILMS / ACCENT GRAPHICS
         </h1>
         <div id="decorative">
-          <GridItem itemClass="decorative" id="arc">
-            {/* *********************** need fix ************************ */}
+          <GridItem itemClass="gridImg" id="arc">
             <Img
               fluid={data.glassImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -242,7 +243,7 @@ const IndexPage = ({ data }) => (
               <li>Frosted glass door design</li>
             </ul>
           </GridItem>
-          <GridItem itemClass="decorative" id="decw">
+          <GridItem itemClass="gridImg" id="decw">
             <Img
               fluid={data.largeWallImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -258,7 +259,7 @@ const IndexPage = ({ data }) => (
               <li>Wall and floor decals</li>
             </ul>
           </GridItem>
-          <GridItem itemClass="decorative" id="sec">
+          <GridItem itemClass="gridImg" id="sec">
             <Img
               fluid={data.securityFilmImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -274,7 +275,7 @@ const IndexPage = ({ data }) => (
             </ul>
           </GridItem>
 
-          <GridItem itemClass="decorative" id="rec">
+          <GridItem itemClass="gridImg" id="rec">
             <Img
               fluid={data.receptionImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -296,7 +297,7 @@ const IndexPage = ({ data }) => (
       <div className="row signage_row" id="signageSection">
         <h1 className="sectionTitle">SIGNAGE</h1>
         <div id="signage">
-          <GridItem itemClass="signage" id="way">
+          <GridItem itemClass="gridImg" id="way">
             <Img
               fluid={data.wayfindingImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -314,7 +315,7 @@ const IndexPage = ({ data }) => (
               <li>Wayfinding firms</li>
             </ul>
           </GridItem>
-          <GridItem itemClass="signage" id="saf">
+          <GridItem itemClass="gridImg" id="saf">
             <Img
               fluid={data.safetyImage.childImageSharp.fluid}
               alt="alt text tk"
@@ -331,7 +332,7 @@ const IndexPage = ({ data }) => (
               <li>Safety signs and workplace signs</li>
             </ul>
           </GridItem>
-          <GridItem itemClass="signage" id="ins">
+          <GridItem itemClass="gridImg" id="ins">
             <Img
               fluid={data.installationImage.childImageSharp.fluid}
               alt="alt text tk"

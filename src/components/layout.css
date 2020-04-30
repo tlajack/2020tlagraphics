@@ -229,7 +229,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0.5rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -964,6 +964,7 @@ div.row {
   margin: 1em auto 1em;
   font-size: 2em;
   text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgb(60, 60, 60);
 }
 
 .service_row {
@@ -976,9 +977,6 @@ div#service {
   grid-template-columns: 1fr;
   grid-gap: 1em;
 }
-/* .service {
-  background-color: white;
-} */
 
 .merch_row {
   background-color: black;
@@ -989,10 +987,6 @@ div#merch {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
-}
-.merch {
-  /* min-height: 350px; */
-  background-color: white;
 }
 
 /* Class for each grid item   .items  */
@@ -1010,7 +1004,7 @@ div#merch {
   margin: 10px;
 } */
 #service h1 {
-  /* text-shadow: 1px 1px 5px black; */
+  text-shadow: 1px 1px 5px rgb(60, 60, 60);
   color: white;
   margin: 1em auto 0.5em;
 }
@@ -1037,10 +1031,6 @@ div#marketing {
   grid-template-columns: 1fr;
   grid-gap: 1em;
 }
-.marketing {
-  /* min-height: 350px; */
-  background-color: white;
-}
 
 .decorative_row {
   background-color: gray;
@@ -1051,10 +1041,6 @@ div#decorative {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
-}
-.decorative {
-  /* min-height: 350px; */
-  background-color: white;
 }
 
 .signage_row {
@@ -1067,16 +1053,28 @@ div#signage {
   grid-template-columns: 1fr;
   grid-gap: 1em;
 }
-.signage {
-  /* min-height: 350px; */
-  background-color: white;
-}
 
 .grid_items {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.gridImg {
+  /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+  /* clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  ); */
+  /* clip-path: polygon(84% 0, 100% 50%, 84% 100%, 0% 100%, 19% 50%, 0% 0%); */
+  border: 10px solid teal;
+  border-right: 0;
+  border-left: 0;
 }
 #news {
   display: grid;
