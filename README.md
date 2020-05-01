@@ -4,7 +4,6 @@ _2020 update_
 
 # TODO List
 
-- add social media icons
 - nav bar sublist fix
 - re evaluate layout of sections
   - 2-item section to 2-column
@@ -14,3 +13,4 @@ _2020 update_
   - add alternative overall layout for extra wide monitors
 - update images alt description - currently set to boilerplate text
 - change reception graphics to something more realistic
+- fix custom 404 page issue
