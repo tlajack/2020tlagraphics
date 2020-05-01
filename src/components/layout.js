@@ -25,7 +25,11 @@ const Layout = ({ children }) => {
             {` `}
             <Link to="/">TLA Graphics</Link>
           </p>
-          <p>158 Don Hillock Dr. Unit 11, Aurora, ON L4G 0G9</p>
+          <p>
+            158 Don Hillock Dr. Unit 11
+            <br />
+            Aurora, ON L4G 0G9
+          </p>
         </div>
         <div>
           <p>

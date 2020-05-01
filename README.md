@@ -5,7 +5,6 @@ _2020 update_
 # TODO List
 
 - add social media icons
-- footer: linebreak of address
 - nav bar sublist fix
 - re evaluate layout of sections
   - 2-item section to 2-column
