@@ -1082,6 +1082,7 @@ div#signage {
   align-items: center;
   justify-content: center;
 }
+
 .gridImg {
   /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
   /* clip-path: polygon(
@@ -1094,10 +1095,28 @@ div#signage {
     10% 20%
   ); */
   /* clip-path: polygon(84% 0, 100% 50%, 84% 100%, 0% 100%, 19% 50%, 0% 0%); */
-  border: 10px solid teal;
+  border: 3px solid teal;
   border-right: 0;
   border-left: 0;
+  overflow: hidden;
 }
+.gridImg > *:first-child {
+  transition: 1s;
+}
+
+.gridImg > *:first-child:hover {
+  transform: scale(1.5);
+}
+
+.service_row img {
+  transition: 1s !important;
+}
+
+.service_row img:hover {
+  transform: scale(1.5);
+  /* transition-duration: 1s; */
+}
+
 #news {
   display: grid;
   grid-template-columns: 1fr;

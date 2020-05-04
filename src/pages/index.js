@@ -131,6 +131,7 @@ const IndexPage = ({ data }) => (
             <Img
               fluid={data.dentalImage.childImageSharp.fluid}
               alt="Selection of signs"
+              className="photoZoom"
             />
           </GridItem>
           <GridItem itemClass="subsectionList">
