@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -10,7 +10,7 @@ import shield from "../images/icon-shield.svg"
 import snap from "../images/icon-snap.svg"
 import Logo from "../images/logo-white.svg"
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout id="antimicrobialMain">
     <SEO title="Antimicrobial Film" />
     <div
@@ -110,29 +110,4 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export const query = graphql`
-  query {
-    antimicrobialImage: file(relativePath: { eq: "icon-virus.svg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    snapImage: file(relativePath: { eq: "icon-snap.svg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    shieldImage: file(relativePath: { eq: "icon-shield.svg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 export default IndexPage
