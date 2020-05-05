@@ -127,56 +127,57 @@ const IndexPage = ({ data }) => (
       <div className="row merch_row" id="merchandisingSection">
         <h1 className="sectionTitle">VISUAL MERCHANDISING</h1>
         <div id="merch">
-          <GridItem itemClass="gridImg" id="new">
+          <GridItem id="new">
             <Img
+              className="gridImg"
               fluid={data.dentalImage.childImageSharp.fluid}
               alt="Selection of signs"
-              className="photoZoom"
             />
+            <div className="subsectionList">
+              <h1>New Construction – Dental</h1>
+              <ul>
+                <li>Dental office wall art </li>
+                <li>Dental office decals</li>
+                <li>Dental window graphics</li>
+                <li>Dental signage</li>
+              </ul>
+            </div>
           </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>New Construction – Dental</h1>
-            <ul>
-              <li>Dental office wall art </li>
-              <li>Dental office decals</li>
-              <li>Dental window graphics</li>
-              <li>Dental signage</li>
-            </ul>
-          </GridItem>
-          <GridItem itemClass="gridImg" id="manu">
+          <GridItem id="manu">
             <Img
+              className="gridImg"
               fluid={data.manufacturingImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+            <div className="subsectionList">
+              <h1>MANUFACTURING PARTNERSHIPS</h1>
+              <ul>
+                <li>Furnishings</li>
+                <li>Furniture</li>
+                <li>Lectern Logos</li>
+                <li>Custom podium decals</li>
+                <li>Podium signs</li>
+                <li>Reusable / detachable / removeable podium signs</li>
+              </ul>
+            </div>
           </GridItem>
 
-          <GridItem itemClass="subsectionList">
-            <h1>MANUFACTURING PARTNERSHIPS</h1>
-            <ul>
-              <li>Furnishings</li>
-              <li>Furniture</li>
-              <li>Lectern Logos</li>
-              <li>Custom podium decals</li>
-              <li>Podium signs</li>
-              <li>Reusable / detachable / removeable podium signs</li>
-            </ul>
-          </GridItem>
-
-          <GridItem itemClass="gridImg" id="ret">
+          <GridItem id="ret">
             <Img
+              className="gridImg"
               fluid={data.retailImage.childImageSharp.fluid}
               alt="alt text tk"
             />
-          </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Retail POP</h1>
-            <ul>
-              <li>POP Signage and graphics</li>
-              <li>POP display / POP displays</li>
-              <li>Point of sale display ideas </li>
-              <li>Point of purchase examples </li>
-              <li>Types of POP material / POP material examples</li>
-            </ul>
+            <div className="subsectionList">
+              <h1>Retail POP</h1>
+              <ul>
+                <li>POP Signage and graphics</li>
+                <li>POP display / POP displays</li>
+                <li>Point of sale display ideas </li>
+                <li>Point of purchase examples </li>
+                <li>Types of POP material / POP material examples</li>
+              </ul>
+            </div>
           </GridItem>
         </div>
       </div>
@@ -185,36 +186,37 @@ const IndexPage = ({ data }) => (
       <div className="row marketing_row" id="marketingSection">
         <h1 className="sectionTitle">MARKETING COLLATERAL</h1>
         <div id="marketing">
-          <GridItem itemClass="gridImg" id="cat">
+          <GridItem id="cat">
             <Img
+              className="gridImg"
               fluid={data.catalogueImage.childImageSharp.fluid}
               alt="alt text tk"
             />
-          </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Catalogues, Brochures, Flyers</h1>
-            <ul>
-              <li>Catalogue design and print</li>
-              <li>Catalogue design and print services</li>
-              <li>Catalogue design services</li>
-            </ul>
+            <div className="subsectionList">
+              <h1>Catalogues, Brochures, Flyers</h1>
+              <ul>
+                <li>Catalogue design and print</li>
+                <li>Catalogue design and print services</li>
+                <li>Catalogue design services</li>
+              </ul>
+            </div>
           </GridItem>
 
-          <GridItem itemClass="gridImg" id="int">
+          <GridItem id="int">
             <Img
+              className="gridImg"
               fluid={data.philipsShield.childImageSharp.fluid}
               alt="alt text tk"
             />
-          </GridItem>
-
-          <GridItem itemClass="subsectionList">
-            <h1>Customized Branding</h1>
-            <ul>
-              <li>Internal Corporate Branding</li>
-              <li>Company logo design</li>
-              <li>Custom award design and fabrication</li>
-              <li>Custom corporate awards</li>
-            </ul>
+            <div className="subsectionList">
+              <h1>Customized Branding</h1>
+              <ul>
+                <li>Internal Corporate Branding</li>
+                <li>Company logo design</li>
+                <li>Custom award design and fabrication</li>
+                <li>Custom corporate awards</li>
+              </ul>
+            </div>
           </GridItem>
         </div>
       </div>
@@ -225,71 +227,73 @@ const IndexPage = ({ data }) => (
           DECORATIVE GRAPHIC FILMS / ACCENT GRAPHICS
         </h1>
         <div id="decorative">
-          <GridItem itemClass="gridImg" id="arc">
+          <GridItem id="arc">
             <Img
+              className="gridImg"
               fluid={data.glassImage.childImageSharp.fluid}
               alt="alt text tk"
-              className="architecturalFrosting"
-              imgStyle={{ objectFit: "contain", height: "auto !important" }}
             />
+            <div className="subsectionList">
+              <h1>Architectural Frosting</h1>
+              <ul>
+                <li>Decorative glass finishes</li>
+                <li>Architectural window film</li>
+                <li>Architectural film</li>
+                <li>Office glass design</li>
+                <li>Office glass door design / Best office glass design </li>
+                <li>Frosted glass door design</li>
+              </ul>
+            </div>
           </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Architectural Frosting</h1>
-            <ul>
-              <li>Decorative glass finishes</li>
-              <li>Architectural window film</li>
-              <li>Architectural film</li>
-              <li>Office glass design</li>
-              <li>Office glass door design / Best office glass design </li>
-              <li>Frosted glass door design</li>
-            </ul>
-          </GridItem>
-          <GridItem itemClass="gridImg" id="decw">
+          <GridItem id="decw">
             <Img
+              className="gridImg"
               fluid={data.largeWallImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+            <div className="subsectionList">
+              <h1>Decorative Graphics / Wall Graphics Decoration</h1>
+              <ul>
+                <li>Custom wall graphics</li>
+                <li>Large wall graphics</li>
+                <li>Custom wall wraps</li>
+                <li>Wall graphics for businesses / offices</li>
+                <li>Wall and floor decals</li>
+              </ul>
+            </div>
           </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Decorative Graphics / Wall Graphics Decoration</h1>
-            <ul>
-              <li>Custom wall graphics</li>
-              <li>Large wall graphics</li>
-              <li>Custom wall wraps</li>
-              <li>Wall graphics for businesses / offices</li>
-              <li>Wall and floor decals</li>
-            </ul>
-          </GridItem>
-          <GridItem itemClass="gridImg" id="sec">
+          <GridItem id="sec">
             <Img
+              className="gridImg"
               fluid={data.securityFilmImage.childImageSharp.fluid}
               alt="alt text tk"
             />
-          </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Privacy Films</h1>
-            <ul>
-              <li>Commercial safety window films</li>
-              <li>Commercial window films</li>
-              <li>Privacy and decorative window films</li>
-              <li>Frosted window films</li>
-            </ul>
+            <div className="subsectionList">
+              <h1>Privacy Films</h1>
+              <ul>
+                <li>Commercial safety window films</li>
+                <li>Commercial window films</li>
+                <li>Privacy and decorative window films</li>
+                <li>Frosted window films</li>
+              </ul>
+            </div>
           </GridItem>
 
-          <GridItem itemClass="gridImg" id="rec">
+          <GridItem id="rec">
             <Img
+              className="gridImg"
               fluid={data.receptionImage.childImageSharp.fluid}
               alt="alt text tk"
             />
-          </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Reception Graphics, Reception Logos</h1>
-            <ul>
-              <li>Reception logo design</li>
-              <li>Reception logo wall</li>
-              <li>Reception logo signage</li>
-              <li>Reception logo sign</li>
-            </ul>
+            <div className="subsectionList">
+              <h1>Reception Graphics, Reception Logos</h1>
+              <ul>
+                <li>Reception logo design</li>
+                <li>Reception logo wall</li>
+                <li>Reception logo signage</li>
+                <li>Reception logo sign</li>
+              </ul>
+            </div>
           </GridItem>
         </div>
       </div>
@@ -298,55 +302,58 @@ const IndexPage = ({ data }) => (
       <div className="row signage_row" id="signageSection">
         <h1 className="sectionTitle">SIGNAGE</h1>
         <div id="signage">
-          <GridItem itemClass="gridImg" id="way">
+          <GridItem id="way">
             <Img
+              className="gridImg"
               fluid={data.wayfindingImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+            <div className="subsectionList">
+              <h1>Way Finding</h1>
+              <ul>
+                <li>Wayfinding and sign design</li>
+                <li>Wayfinding signage systems</li>
+                <li>Digital wayfinding signage</li>
+                <li>Wayfinding signage design firms</li>
+                <li>Signage and wayfinding consultants</li>
+                <li>Environmental graphic design firms</li>
+                <li>Wayfinding firms</li>
+              </ul>
+            </div>
           </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Way Finding</h1>
-            <ul>
-              <li>Wayfinding and sign design</li>
-              <li>Wayfinding signage systems</li>
-              <li>Digital wayfinding signage</li>
-              <li>Wayfinding signage design firms</li>
-              <li>Signage and wayfinding consultants</li>
-              <li>Environmental graphic design firms</li>
-              <li>Wayfinding firms</li>
-            </ul>
-          </GridItem>
-          <GridItem itemClass="gridImg" id="saf">
+          <GridItem id="saf">
             <Img
+              className="gridImg"
               fluid={data.safetyImage.childImageSharp.fluid}
               alt="alt text tk"
             />
+            <div className="subsectionList">
+              <h1>Safety Signage</h1>
+              <ul>
+                <li>Workplace safety signage</li>
+                <li>Construction safety signs</li>
+                <li>Custom safety signs</li>
+                <li>Custom metal / magnetic safety signs</li>
+                <li>Industrial safety signs</li>
+                <li>Safety signs and workplace signs</li>
+              </ul>
+            </div>
           </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Safety Signage</h1>
-            <ul>
-              <li>Workplace safety signage</li>
-              <li>Construction safety signs</li>
-              <li>Custom safety signs</li>
-              <li>Custom metal / magnetic safety signs</li>
-              <li>Industrial safety signs</li>
-              <li>Safety signs and workplace signs</li>
-            </ul>
-          </GridItem>
-          <GridItem itemClass="gridImg" id="ins">
+          <GridItem id="ins">
             <Img
+              className="gridImg"
               fluid={data.installationImage.childImageSharp.fluid}
               alt="alt text tk"
             />
-          </GridItem>
-          <GridItem itemClass="subsectionList">
-            <h1>Installation Services</h1>
-            <ul>
-              <li>Reception logo design</li>
-              <li>Reception logo wall</li>
-              <li>Reception logo signage</li>
-              <li>Reception logo sign</li>
-            </ul>
+            <div className="subsectionList">
+              <h1>Installation Services</h1>
+              <ul>
+                <li>Reception logo design</li>
+                <li>Reception logo wall</li>
+                <li>Reception logo signage</li>
+                <li>Reception logo sign</li>
+              </ul>
+            </div>
           </GridItem>
         </div>
       </div>

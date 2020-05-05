@@ -1035,7 +1035,8 @@ div#merch {
 .items ul {
   margin-bottom: unset;
 }
-.subsectionList * {
+.subsectionList,
+.subsectionList li {
   color: rgb(228, 228, 228);
   text-align: initial;
 }
@@ -1100,19 +1101,19 @@ div#signage {
   border-left: 0;
   overflow: hidden;
 }
-.gridImg > *:first-child {
-  transition: 1s;
+/* .gridImg > *:first-child {
+  transition: 1.5s;
 }
 
 .gridImg > *:first-child:hover {
   transform: scale(1.5);
+} */
+
+.row img {
+  transition: 1.5s !important;
 }
 
-.service_row img {
-  transition: 1s !important;
-}
-
-.service_row img:hover {
+.row img:hover {
   transform: scale(1.5);
   /* transition-duration: 1s; */
 }
@@ -1188,13 +1189,26 @@ div#signage {
   .newsItem {
     grid-template-columns: 1fr;
   }
+
+  .merch_row .gridImg {
+    width: 100%;
+    max-height: 15vw;
+  }
+  .grid_items {
+    align-items: unset;
+  }
+  .subsectionList {
+    margin-top: 1em;
+  }
   div#service {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     max-width: initial;
   }
   div#merch {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: initial;
   }
   div#marketing {
     grid-template-columns: 1fr 1fr;
@@ -1203,7 +1217,9 @@ div#signage {
     grid-template-columns: 1fr 1fr;
   }
   div#signage {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: initial;
   }
   .footer {
     grid-template-columns: 1fr 1fr;
