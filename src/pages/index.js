@@ -147,7 +147,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.manufacturingImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="Manufacturing Custom Graphics"
             />
             <div className="subsectionList">
               <h1>MANUFACTURING PARTNERSHIPS</h1>
@@ -166,7 +166,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.retailImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="Store front sample graphics"
             />
             <div className="subsectionList">
               <h1>Retail POP</h1>
@@ -190,7 +190,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.catalogueImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="Kodak catalogue"
             />
             <div className="subsectionList">
               <h1>Catalogues, Brochures, Flyers</h1>
@@ -206,7 +206,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.philipsShield.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="Philips logo reception sign"
             />
             <div className="subsectionList">
               <h1>Customized Branding</h1>
@@ -231,7 +231,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.glassImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="boardroom frosted film"
             />
             <div className="subsectionList">
               <h1>Architectural Frosting</h1>
@@ -249,7 +249,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.largeWallImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="Large wall graphics"
             />
             <div className="subsectionList">
               <h1>Decorative Graphics / Wall Graphics Decoration</h1>
@@ -266,7 +266,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.securityFilmImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="Privacy film"
             />
             <div className="subsectionList">
               <h1>Privacy Films</h1>
@@ -283,7 +283,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.receptionImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="reception logo"
             />
             <div className="subsectionList">
               <h1>Reception Graphics, Reception Logos</h1>
@@ -306,7 +306,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.wayfindingImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="exit sign"
             />
             <div className="subsectionList">
               <h1>Way Finding</h1>
@@ -325,7 +325,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.safetyImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="business poster"
             />
             <div className="subsectionList">
               <h1>Safety Signage</h1>
@@ -343,7 +343,7 @@ const IndexPage = ({ data }) => (
             <Img
               className="gridImg"
               fluid={data.installationImage.childImageSharp.fluid}
-              alt="alt text tk"
+              alt="installation photo - stairs"
             />
             <div className="subsectionList">
               <h1>Installation Services</h1>
