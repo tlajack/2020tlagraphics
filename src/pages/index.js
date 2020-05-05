@@ -489,7 +489,9 @@ export const query = graphql`
         }
       }
     }
-    dentalImage: file(relativePath: { eq: "homepage/IMG_6546-900x1200.jpg" }) {
+    dentalImage: file(
+      relativePath: { eq: "homepage/dentistry-01-IMG_6525.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid

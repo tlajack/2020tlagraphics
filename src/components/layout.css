@@ -1035,6 +1035,10 @@ div#merch {
 .items ul {
   margin-bottom: unset;
 }
+.subsectionList {
+  margin-top: 1em;
+}
+
 .subsectionList,
 .subsectionList li {
   color: rgb(228, 228, 228);
@@ -1192,14 +1196,11 @@ div#signage {
 
   .merch_row .gridImg {
     width: 100%;
-    max-height: 15vw;
   }
   .grid_items {
     align-items: unset;
   }
-  .subsectionList {
-    margin-top: 1em;
-  }
+
   div#service {
     grid-template-columns: 1fr 1fr;
     width: 100%;
