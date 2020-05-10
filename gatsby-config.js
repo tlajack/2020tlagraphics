@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `TLA Graphics`,
-    description: `2020 version of tlagraphics.com`,
+    title: `TLA Graphics`, // titleTemplate: `%s · The Real Hero`,
+    description: `Transforming Ideas into Stunning Visuals`,
+    url: `https://tlagraphics.ca`, // No trailing slash allowed!
+    // image: `/images/snape.jpg`, // Path to your image you placed in the 'static' folder
+    twitterUsername: `@tlagraphics`,
     author: `@tlagraphics`,
   },
   // pathPrefix: `/2020-a`,
