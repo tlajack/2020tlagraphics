@@ -2,35 +2,43 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Logo from "../images/logo-white.svg"
+import headerStyles from "./header.module.scss"
 
 const clickHandler = e => {
   document.getElementById("nav").classList.toggle("active")
 }
+// console.log(headerStyles)
 
 const activeStyle = {
   color: "rgb(0, 182, 182)",
 }
 
 const Header = () => (
-  <header id="header">
-    <div className="container">
-      <nav id="nav">
+  <header className={headerStyles.header}>
+    <div className={headerStyles.container}>
+      <nav id="nav" className={headerStyles.nav}>
         <div
-          className="menu-icons"
+          className={headerStyles.menuIcons}
           role="button"
           tabIndex={0}
           onClick={clickHandler}
           onKeyDown={clickHandler}
         >
-          <i className="icon icon-menu">&#10010;</i>
-          <i className="icon icon-close">&#10006;</i>
+          <i className={`${headerStyles.icon} ${headerStyles.icon_menu}`}>
+            &#10010;
+          </i>{" "}
+          {/*"icon icon-menu"*/}
+          <i className={`${headerStyles.icon} ${headerStyles.icon_close}`}>
+            &#10006;
+          </i>
+          {/* "icon icon-close" */}
         </div>
-        <div className="logo">
+        <div className={headerStyles.logo}>
           <Link to="/">
             <img src={Logo} alt="TLA Graphics Logo" />
           </Link>
         </div>
-        <ul className="nav-list">
+        <ul className={headerStyles.nav_list}>
           <li>
             <Link to="/" activeStyle={activeStyle}>
               Home
