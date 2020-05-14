@@ -29,7 +29,24 @@ const IndexPage = ({ data }) => (
         >
           <h1>News</h1>
         </BackgroundImage>
-
+        <div className="newsItem">
+          <div className="newsPhoto">
+            <Link to="/plexishields">
+              <Img
+                fluid={data.amdShield.childImageSharp.fluid}
+                alt="faceshield image"
+              />
+            </Link>
+          </div>
+          <div className="newsCopy">
+            <p>
+              TLA produces and installs customized{" "}
+              <Link to="/plexishields">plexiglass shields</Link>.{" "}
+              <a href="mailto:info@tlagraphics.com">Contact us</a> for more
+              details.
+            </p>
+          </div>
+        </div>
         <div className="newsItem">
           <div className="newsPhoto">
             <Link to="/faceshields">
@@ -61,21 +78,7 @@ const IndexPage = ({ data }) => (
             </p>
           </div>
         </div>
-        <div className="newsItem">
-          <div className="newsPhoto">
-            <Img
-              fluid={data.amdShield.childImageSharp.fluid}
-              alt="faceshield image"
-            />
-          </div>
-          <div className="newsCopy">
-            <p>
-              TLA produces and installs customized plexiglass shields.{" "}
-              <a href="mailto:info@tlagraphics.com">Contact us</a> for more
-              details.
-            </p>
-          </div>
-        </div>
+
         <div id="topTwitterFeed">
           <TwitterTimelineEmbed
             sourceType="profile"

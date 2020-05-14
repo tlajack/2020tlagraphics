@@ -1,0 +1,12 @@
+.plexiPage {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plexiRow {
+  display: flex;
+  flex-direction: row;
+}
+.plexiCol {
+  width: 30vw;
+}
