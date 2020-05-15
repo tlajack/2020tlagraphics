@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/antimicrobial.css"
 import Logo from "../images/logo-white.svg"
 import "../components/plexiglass.css"
 

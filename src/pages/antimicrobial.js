@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/antimicrobial.css"
+import styles from "../components/antimicrobial.module.scss"
 import virus from "../images/icon-virus.svg"
 import shield from "../images/icon-shield.svg"
 import snap from "../images/icon-snap.svg"
@@ -24,7 +24,7 @@ const IndexPage = () => (
       </Link>
     </div>
 
-    <div className="antimicrobial_infoRow">
+    <div className={styles.antimicrobial_infoRow}>
       <h1>Antimicrobial Film</h1>
       <h2>Characteristics of Antimicrobial Film</h2>
       <p>
@@ -33,7 +33,7 @@ const IndexPage = () => (
         the coronavirus touched the surface of the copper.
       </p>
       <h2>Touch with Confidence</h2>
-      <div className="antimicrobial_images">
+      <div className={styles.antimicrobial_images}>
         <div>
           <img src={virus} alt="antimicrobial icon" />
           <h3>Antimicrobial</h3>
@@ -62,7 +62,9 @@ const IndexPage = () => (
       </p>
     </div>
 
-    <div className="antimicrobial_infoRow antimicrobial_section_construction">
+    <div
+      className={`${styles.antimicrobial_infoRow} ${styles.antimicrobial_section_construction}`}
+    >
       <h2>Construction & Characteristics</h2>
       <p>
         Providing an optimal antibacterial solution by applying a special
@@ -72,7 +74,9 @@ const IndexPage = () => (
       <p>Softness, low transparancy, non adhesive</p>
     </div>
 
-    <div className="antimicrobial_infoRow antimicrobial_section_application">
+    <div
+      className={`${styles.antimicrobial_infoRow} ${styles.antimicrobial_section_application}`}
+    >
       <h2>Application Examples for Antimicrobial Film</h2>
       <ul>
         <li>Public transit handles</li>
@@ -84,7 +88,9 @@ const IndexPage = () => (
       </ul>
     </div>
 
-    <div className="antimicrobial_infoRow antimicrobial_section_productInfo">
+    <div
+      className={`${styles.antimicrobial_infoRow} ${styles.antimicrobial_section_productInfo}`}
+    >
       <h2>Product Information</h2>
       <ul>
         <li>Specifications: 15.748 in. x 32.80 ft. (400mm x 10m)</li>
@@ -96,7 +102,7 @@ const IndexPage = () => (
         </li>
       </ul>
     </div>
-    <div className="antimicrobial_iframe">
+    <div className={styles.antimicrobial_iframe}>
       <iframe
         title="antimicrobial video"
         width="560"
