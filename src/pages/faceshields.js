@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import "../components/faceshields.css"
+import styles from "../components/faceshields.module.css"
 import Logo from "../images/logo-white.svg"
 
 const IndexPage = ({ data }) => (
@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
       }}
     >
       <Link to="/">
-        <img className="topLogo" src={Logo} alt="TLA Graphics Logo" />
+        <img className={styles.topLogo} src={Logo} alt="TLA Graphics Logo" />
       </Link>
     </div>
     <h1>Doing our part in combating the Coronavirus disease (COVID-19)</h1>
@@ -55,8 +55,8 @@ const IndexPage = ({ data }) => (
         fluid={data.photo01.childImageSharp.fluid}
         alt="Face mask photo"
       />
-      <div id="warning">
-        <div className="warningIcon">
+      <div className={styles.warning}>
+        <div className={styles.warningIcon}>
           <Img
             className="warningImage"
             fixed={data.warning.childImageSharp.fixed}
@@ -73,11 +73,9 @@ const IndexPage = ({ data }) => (
         </p>
       </div>
     </div>
-    <div className="youtubeVideo">
+    <div className={styles.youtubeVideo}>
       <iframe
         title="face mask video"
-        width="560"
-        height="315"
         src="https://www.youtube.com/embed/QnT6tq8X8ZY"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

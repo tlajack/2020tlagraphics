@@ -24,7 +24,7 @@ a:hover {
   color: gray;
 }
 
-#warning {
+.warning {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -32,10 +32,23 @@ a:hover {
   background-color: antiquewhite;
   border-radius: 21px;
 }
-#warnig img {
+.warnig img {
   min-width: 250px;
 }
-#warning p {
+.warning p {
   padding: 1rem;
   margin: 0;
+}
+div.youtubeVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtubeVideo iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
