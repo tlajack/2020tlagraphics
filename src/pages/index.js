@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => (
         </BackgroundImage>
         <div className="newsItem">
           <div className="newsPhoto">
-            <Link to="/plexishields">
+            <Link to="/plexishields" title="plexiglass shield info">
               <Img
                 fluid={data.amdShield.childImageSharp.fluid}
                 alt="faceshield image"
@@ -41,15 +41,20 @@ const IndexPage = ({ data }) => (
           <div className="newsCopy">
             <p>
               TLA produces and installs customized{" "}
-              <Link to="/plexishields">plexiglass shields</Link>.{" "}
-              <a href="mailto:info@tlagraphics.com">Contact us</a> for more
-              details.
+              <Link to="/plexishields" title="plexiglass shield info">
+                plexiglass shields
+              </Link>
+              .{" "}
+              <a href="mailto:info@tlagraphics.com" title="contact us!">
+                Contact us
+              </a>{" "}
+              for more details.
             </p>
           </div>
         </div>
         <div className="newsItem">
           <div className="newsPhoto">
-            <Link to="/faceshields">
+            <Link to="/faceshields" title="faceshields info">
               <Img
                 fluid={data.faceshieldImage.childImageSharp.fluid}
                 alt="faceshield image"
@@ -60,21 +65,25 @@ const IndexPage = ({ data }) => (
             <p>
               TLA Graphics is contributing to our frontline worker's safety with
               PPE manufacturing. Click here for more info:{" "}
-              <Link to="/faceshields">Faceshields</Link>
+              <Link to="/faceshields" title="faceshields info">
+                Faceshields
+              </Link>
             </p>
           </div>
         </div>
         <div className="newsItem">
           <div className="newsPhoto">
-            <Link to="/antimicrobial">
+            <Link to="/antimicrobial" title="antimicrobial film info">
               <img src={virus} alt="icon representing virus" />
             </Link>
           </div>
           <div className="newsCopy">
             <p>
               Keep high-traffic public areas safer with{" "}
-              <Link to="/antimicrobial">Antimicrobial Film</Link>. We customize
-              and install.
+              <Link to="/antimicrobial" title="antimicrobial film info">
+                Antimicrobial Film
+              </Link>
+              . We customize and install.
             </p>
           </div>
         </div>
