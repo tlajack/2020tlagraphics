@@ -5,28 +5,8 @@ import Logo from "../images/logo-white.svg"
 import headerStyles from "./header.module.scss"
 
 const clickHandler = () => {
-  // document.getElementById("nav").classList.toggle("active")
-
-  // hack:
-  var t = document.getElementById("navList")
-  var m = document.getElementById("iconMenu")
-  var c = document.getElementById("iconClose")
-  if (t.style.display === "none") {
-    t.style.display = "flex"
-    t.style.zIndex = 1000
-    m.style.display = "none"
-    c.style.display = "block"
-    c.style.zIndex = 3000
-  } else {
-    t.style.display = "none"
-    m.style.display = "block"
-    m.style.zIndex = 3000
-    c.style.display = "none"
-  }
-  // console.log(window.innerWidth)
+  document.getElementById("nav").classList.toggle(headerStyles.active)
 }
-// var t = document.getElementById("navList")
-// console.log(t.style.display)
 
 const activeStyle = {
   color: "rgb(0, 182, 182)",
@@ -55,11 +35,7 @@ const Header = () => (
             <img src={Logo} alt="TLA Graphics Logo" />
           </Link>
         </div>
-        <ul
-          id="navList"
-          className={headerStyles.nav_list}
-          style={{ display: "none" }}
-        >
+        <ul id="navList" className={headerStyles.nav_list}>
           <li>
             <Link to="/" activeStyle={activeStyle}>
               Home
