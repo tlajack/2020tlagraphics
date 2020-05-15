@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../images/logo-white.svg"
-import "../components/plexiglass.css"
+import styles from "../components/plexiglass.module.scss"
 
 const ShieldPage = ({ data }) => (
   <Layout>
@@ -22,8 +22,8 @@ const ShieldPage = ({ data }) => (
     </div>
 
     <div>
-      <div className="plexiPage">
-        <div className="plexiRow">
+      <div className={styles.plexiPage}>
+        <div className={styles.plexiRow}>
           <div>
             <h1>Plexiglass Shield</h1>
             <p>Custom size, custom shape, permanent or removable.</p>
@@ -37,7 +37,7 @@ const ShieldPage = ({ data }) => (
               <li>Plexiglass Partitions</li>
             </ul>
           </div>
-          <div className="plexiCol">
+          <div className={styles.plexiCol}>
             <Img
               fluid={data.plexi.childImageSharp.fluid}
               alt="Warning rendering"

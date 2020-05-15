@@ -1,3 +1,7 @@
+.images {
+  margin-bottom: 1.5em;
+}
+
 .shieldImage + .shieldImage {
   margin-top: 1em;
 }
@@ -6,22 +10,6 @@
   display: block;
   margin: auto;
   width: 400px;
-}
-
-h1 {
-  font-size: 1.2em;
-}
-
-footer {
-  font-size: 12px;
-}
-
-a {
-  color: teal;
-}
-
-a:hover {
-  color: gray;
 }
 
 .warning {
@@ -51,4 +39,18 @@ div.youtubeVideo {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media screen and (min-width: 720px) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+  }
+  .info > div {
+    width: 40%;
+  }
+  .info > :first-child {
+    width: 60%;
+  }
 }

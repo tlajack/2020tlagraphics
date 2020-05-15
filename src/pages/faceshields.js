@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import styles from "../components/faceshields.module.css"
+import styles from "../components/faceshields.module.scss"
 import Logo from "../images/logo-white.svg"
 
 const IndexPage = ({ data }) => (
@@ -18,40 +18,46 @@ const IndexPage = ({ data }) => (
       }}
     >
       <Link to="/">
-        <img className={styles.topLogo} src={Logo} alt="TLA Graphics Logo" />
+        <img className="topLogo" src={Logo} alt="TLA Graphics Logo" />
       </Link>
     </div>
-    <h1>Doing our part in combating the Coronavirus disease (COVID-19)</h1>
-    <ul>
-      <li>
-        Download the instruction manual here:{" "}
-        <a href="https://tlagraphics.com/FaceShield-instructions.pdf">
-          Face Shield Instructions
-        </a>
-      </li>
-      <li>
-        Face shield is made of .010 polycarbonate and the frame is .125 UV
-        treated high impact polystyrene.
-      </li>
-    </ul>
-    <div style={{ marginBottom: `1.45rem` }}>
+    <div className={styles.info}>
+      <div>
+        <h1>Doing our part in combating the Coronavirus disease (COVID-19)</h1>
+        <ul>
+          <li>
+            Download the instruction manual here:{" "}
+            <a href="https://tlagraphics.com/FaceShield-instructions.pdf">
+              Face Shield Instructions
+            </a>
+          </li>
+          <li>
+            Face shield is made of .010 polycarbonate and the frame is .125 UV
+            treated high impact polystyrene.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <Img
+          className={styles.shieldImage}
+          fluid={data.rendering02.childImageSharp.fluid}
+          alt="Face mask 3d rendering"
+        />
+      </div>
+    </div>
+    <div className={styles.images}>
       <Img
-        className="shieldImage"
-        fluid={data.rendering02.childImageSharp.fluid}
-        alt="Face mask 3d rendering"
-      />
-      <Img
-        className="shieldImage"
+        className={styles.shieldImage}
         fluid={data.rendering01.childImageSharp.fluid}
         alt="Face mask 3d rendering"
       />
       <Img
-        className="shieldImage"
+        className={styles.shieldImage}
         fluid={data.shield1.childImageSharp.fluid}
         alt="Face mask photo"
       />
       <Img
-        className="shieldImage"
+        className={styles.shieldImage}
         fluid={data.photo01.childImageSharp.fluid}
         alt="Face mask photo"
       />
