@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -17,9 +17,9 @@ const IndexPage = ({ data }) => (
         marginBottom: `1.45rem`,
       }}
     >
-      <a href="https://tlagraphics.com/">
+      <Link to="/">
         <img className="topLogo" src={Logo} alt="TLA Graphics Logo" />
-      </a>
+      </Link>
     </div>
     <h1>Doing our part in combating the Coronavirus disease (COVID-19)</h1>
     <ul>

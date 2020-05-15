@@ -1,5 +1,5 @@
 import React from "react"
-// import { graphql } from "gatsby"
+import { Link } from "gatsby"
 // import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -19,9 +19,9 @@ const IndexPage = () => (
         marginBottom: `1.45rem`,
       }}
     >
-      <a href="https://tlagraphics.com/">
+      <Link to="/">
         <img className="topLogo" src={Logo} alt="TLA Graphics Logo" />
-      </a>
+      </Link>
     </div>
 
     <div className="antimicrobial_infoRow">
