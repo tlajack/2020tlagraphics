@@ -4,10 +4,29 @@ import { Link } from "gatsby"
 import Logo from "../images/logo-white.svg"
 import headerStyles from "./header.module.scss"
 
-const clickHandler = e => {
-  document.getElementById("nav").classList.toggle("active")
+const clickHandler = () => {
+  // document.getElementById("nav").classList.toggle("active")
+
+  // hack:
+  var t = document.getElementById("navList")
+  var m = document.getElementById("iconMenu")
+  var c = document.getElementById("iconClose")
+  if (t.style.display === "none") {
+    t.style.display = "flex"
+    t.style.zIndex = 1000
+    m.style.display = "none"
+    c.style.display = "block"
+    c.style.zIndex = 3000
+  } else {
+    t.style.display = "none"
+    m.style.display = "block"
+    m.style.zIndex = 3000
+    c.style.display = "none"
+  }
+  // console.log(window.innerWidth)
 }
-// console.log(headerStyles)
+// var t = document.getElementById("navList")
+// console.log(t.style.display)
 
 const activeStyle = {
   color: "rgb(0, 182, 182)",
@@ -24,21 +43,23 @@ const Header = () => (
           onClick={clickHandler}
           onKeyDown={clickHandler}
         >
-          <i className={`${headerStyles.icon} ${headerStyles.icon_menu}`}>
+          <i id="iconMenu" className={headerStyles.icon_menu}>
             &#10010;
-          </i>{" "}
-          {/*"icon icon-menu"*/}
-          <i className={`${headerStyles.icon} ${headerStyles.icon_close}`}>
+          </i>
+          <i id="iconClose" className={headerStyles.icon_close}>
             &#10006;
           </i>
-          {/* "icon icon-close" */}
         </div>
         <div className={headerStyles.logo}>
           <Link to="/">
             <img src={Logo} alt="TLA Graphics Logo" />
           </Link>
         </div>
-        <ul className={headerStyles.nav_list}>
+        <ul
+          id="navList"
+          className={headerStyles.nav_list}
+          style={{ display: "none" }}
+        >
           <li>
             <Link to="/" activeStyle={activeStyle}>
               Home

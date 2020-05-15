@@ -106,10 +106,6 @@
     color: teal;
   }
 
-  /* .nav-list > li > ul {
-	  display:none;
-	} */
-
   .sub-menu {
     width: 250px;
     display: block;
@@ -145,62 +141,62 @@
     opacity: 1;
     visibility: visible;
   }
-  @media screen and (max-width: 720px) {
-    .nav_list {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      display: none;
-      flex-direction: column;
-      align-items: initial;
-      background-color: #191919;
-      z-index: 1000;
-      overflow-y: scroll;
-    }
+  .nav_list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    display: none;
+    flex-direction: column;
+    align-items: initial;
+    background-color: rgba(30, 30, 30, 0.7);
+    z-index: 1000;
+    overflow-y: scroll;
+  }
 
-    .nav_list > li {
-      font-size: 1.3em;
-      line-height: 1.5em;
-    }
+  .nav_list > li {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-top: 2em;
+  }
 
-    .sub-menu {
-      position: initial;
-      border: 3px solid transparent;
-      border-left-color: teal;
-      margin-left: 10px;
-      max-height: 0;
-      background-color: transparent;
-    }
+  .sub-menu {
+    position: initial;
+    border: 3px solid transparent;
+    border-left-color: teal;
+    margin-left: 10px;
+    max-height: 0;
+    background-color: transparent;
+  }
 
-    .sub-menu::before {
-      display: none;
-    }
+  .sub-menu::before {
+    display: none;
+  }
 
-    .nav_list li:hover > .sub-menu {
-      opacity: 1;
-      visibility: visible;
-      max-height: initial;
-    }
+  .nav_list li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: initial;
+  }
 
-    .menuIcons {
-      display: block;
-    }
+  .menuIcons {
+    display: block;
+    z-index: 2000;
+  }
 
-    .icon_close {
-      display: none;
-    }
+  .icon_close {
+    display: none;
+  }
 
-    nav.active .icon_close {
-      display: block;
-    }
-    nav.active .icon_menu {
-      display: none;
-    }
+  nav.active .icon_close {
+    display: block;
+  }
+  nav.active .icon_menu {
+    display: none;
+  }
 
-    nav.active .nav-list {
-      display: flex;
-    }
+  nav.active .nav_list {
+    display: flex;
   }
 }
