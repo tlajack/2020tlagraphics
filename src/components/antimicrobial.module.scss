@@ -40,9 +40,15 @@
   margin-left: 1em;
   color: white;
 }
+
 .antimicrobial_section_construction {
   background-color: darkslategray;
   color: white;
+  max-width: initial;
+}
+.antimicrobial_section_construction > * {
+  max-width: 960px;
+  margin: 1em auto;
 }
 .antimicrobial_section_construction p {
   color: white;
@@ -50,10 +56,20 @@
 .antimicrobial_section_application {
   background-color: chocolate;
   color: white;
+  max-width: initial;
+}
+.antimicrobial_section_application > * {
+  max-width: 960px;
+  margin: 1em auto;
 }
 .antimicrobial_section_productInfo {
   background-color: steelblue;
   color: white;
+  max-width: initial;
+}
+.antimicrobial_section_productInfo > * {
+  max-width: 960px;
+  margin: 1em auto;
 }
 div.antimicrobial_iframe {
   padding-bottom: 56.25%;
