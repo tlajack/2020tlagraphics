@@ -95,28 +95,28 @@ export const query = graphql`
   query {
     rendering02: file(relativePath: { eq: "rendering-for-instructions.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     shield1: file(relativePath: { eq: "shield-01.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     rendering01: file(relativePath: { eq: "rendering-02.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     photo01: file(relativePath: { eq: "IMG_7642.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

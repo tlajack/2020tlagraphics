@@ -61,21 +61,21 @@ export const query = graphql`
   query {
     plexi: file(relativePath: { eq: "plexishield-01.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 60) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    beer: file(relativePath: { eq: "beerCart-shield.jpg" }) {
+    beer: file(relativePath: { eq: "beerCart-01.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     amdShield: file(relativePath: { eq: "homepage/amd-shield.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }

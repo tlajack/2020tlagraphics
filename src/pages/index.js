@@ -5,7 +5,6 @@ import { TwitterTimelineEmbed } from "react-twitter-embed"
 import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import GridItem from "../components/gridItem"
 
@@ -475,28 +474,28 @@ export const query = graphql`
       relativePath: { eq: "homepage/CanadaGoose-01-1200x800.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 70) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     frostImage: file(relativePath: { eq: "homepage/IMG_2282-1200x800.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 70) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     collateral: file(relativePath: { eq: "homepage/collateral-1200x800.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    signageImage: file(relativePath: { eq: "homepage/signage-1200x800.jpg" }) {
+    signageImage: file(relativePath: { eq: "homepage/signage-2400x1600.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 90) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -505,16 +504,7 @@ export const query = graphql`
       relativePath: { eq: "homepage/dentistry-01-IMG_6525.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    philipsShield: file(
-      relativePath: { eq: "homepage/shield-clear-high-1000.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -523,14 +513,14 @@ export const query = graphql`
       relativePath: { eq: "homepage/palmieri-navigate-infoDesk.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 60) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     retailImage: file(relativePath: { eq: "homepage/IMG_7353-hd.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 60) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -539,7 +529,16 @@ export const query = graphql`
       relativePath: { eq: "homepage/nathan-anderson-gIzUiKf4hp8-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    philipsShield: file(
+      relativePath: { eq: "homepage/shield-clear-high-1000.jpg" }
+    ) {
+      childImageSharp {
+        fluid(quality: 60) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -548,7 +547,7 @@ export const query = graphql`
       relativePath: { eq: "homepage/benjamin-child-0sT9YhNgSEs-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -557,28 +556,21 @@ export const query = graphql`
       relativePath: { eq: "homepage/scott-webb-NQymDb5XqC4-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 60) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     securityFilmImage: file(relativePath: { eq: "homepage/frosted-film.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 60) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     receptionImage: file(relativePath: { eq: "homepage/reception.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    safetyImage: file(relativePath: { eq: "homepage/coronaSign.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -587,7 +579,14 @@ export const query = graphql`
       relativePath: { eq: "homepage/hello-i-m-nik-mTehrY1mH-s-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    safetyImage: file(relativePath: { eq: "homepage/coronaSign.jpg" }) {
+      childImageSharp {
+        fluid(quality: 50) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -596,7 +595,7 @@ export const query = graphql`
       relativePath: { eq: "homepage/jilbert-ebrahimi-BmDaLayzhc0-unsplash.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 70) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -605,21 +604,21 @@ export const query = graphql`
       relativePath: { eq: "rendering-for-instructions.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     amdShield: file(relativePath: { eq: "homepage/amd-shield.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 50) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     newsBanner: file(relativePath: { eq: "news-banner.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(quality: 80) {
           ...GatsbyImageSharpFluid
         }
       }
