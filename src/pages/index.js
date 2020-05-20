@@ -213,7 +213,7 @@ const IndexPage = ({ data }) => (
             </div>
           </GridItem>
 
-          <GridItem id="int">
+          <GridItem id="customizedbBranding">
             <Img
               className="gridImg"
               fluid={data.philipsShield.childImageSharp.fluid}
@@ -359,10 +359,9 @@ const IndexPage = ({ data }) => (
             <div className="subsectionList">
               <h1>Installation Services</h1>
               <ul>
-                <li>Reception logo design</li>
-                <li>Reception logo wall</li>
-                <li>Reception logo signage</li>
-                <li>Reception logo sign</li>
+                <li>Pre-install preparation/cleaning</li>
+                <li>Installation accessories</li>
+                <li>Worry-free job completion</li>
               </ul>
             </div>
           </GridItem>
@@ -399,13 +398,7 @@ const IndexPage = ({ data }) => (
                 <Link to="#cat">Catalogues, Brochures, Flyers</Link>
               </li>
               <li>
-                <Link to="#bac">Backlit / Frontlit Graphics</Link>
-              </li>
-              <li>
-                <Link to="#cust">Customized Branding</Link>
-              </li>
-              <li>
-                <Link to="#int">Internal Corporate Branding</Link>
+                <Link to="#customizedbBranding">Customized Branding</Link>
               </li>
             </ul>
             <li>
@@ -423,7 +416,7 @@ const IndexPage = ({ data }) => (
                 </Link>
               </li>
               <li>
-                <Link to="#sec">Security Films</Link>
+                <Link to="#sec">Privacy Films</Link>
               </li>
               <li>
                 <Link to="#rec">Reception Graphics, Reception Logos</Link>
