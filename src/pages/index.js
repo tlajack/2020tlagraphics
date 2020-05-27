@@ -91,7 +91,7 @@ const IndexPage = ({ data }) => (
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName="tlagraphics"
-            options={{ height: 600 }}
+            options={{ height: "100%" }}
           />
         </div>
       </div>
