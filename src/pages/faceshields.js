@@ -88,6 +88,16 @@ const IndexPage = ({ data }) => (
         allowfullscreen
       ></iframe>
     </div>
+    <h1 className={styles.youtubeVideo}>Assembly Instructions</h1>
+    <div className={styles.youtubeVideo}>
+      <iframe
+        title="face mask assembly instructions"
+        src="https://www.youtube.com/embed/JdVC2ema3ow"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </Layout>
 )
 

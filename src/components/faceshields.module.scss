@@ -2,7 +2,7 @@
   margin-bottom: 1.5em;
 }
 
-.shieldImage + .shieldImage {
+.shieldImage+.shieldImage {
   margin-top: 1em;
 }
 
@@ -20,17 +20,21 @@
   background-color: antiquewhite;
   border-radius: 21px;
 }
+
 .warnig img {
   min-width: 250px;
 }
+
 .warning p {
   padding: 1rem;
   margin: 0;
 }
+
 div.youtubeVideo {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  margin-bottom: 2em;
 }
 
 .youtubeVideo iframe {
@@ -40,6 +44,7 @@ div.youtubeVideo {
   top: 0;
   left: 0;
 }
+
 @media screen and (min-width: 720px) {
   .info {
     display: flex;
@@ -47,10 +52,12 @@ div.youtubeVideo {
     max-width: 800px;
     margin: auto;
   }
-  .info > div {
+
+  .info>div {
     width: 40%;
   }
-  .info > :first-child {
+
+  .info> :first-child {
     width: 60%;
   }
 }
