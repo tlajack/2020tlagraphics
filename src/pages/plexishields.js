@@ -47,12 +47,24 @@ const ShieldPage = ({ data }) => (
       </div>
 
       <Img
+        fluid={data.merciShield.childImageSharp.fluid}
+        alt="Plexiglass Shield installation"
+      />
+      <Img
         fluid={data.amdShield.childImageSharp.fluid}
         alt="Plexiglass Shield installation"
       />
       <Img
         fluid={data.beer.childImageSharp.fluid}
         alt="Plexiglass Shield design for draught cart"
+      />
+      <Img
+        fluid={data.cafeteria_01.childImageSharp.fluid}
+        alt="Plexiglass Shield installation"
+      />
+      <Img
+        fluid={data.cafeteria_02.childImageSharp.fluid}
+        alt="Plexiglass Shield installation"
       />
     </div>
   </Layout>
@@ -74,6 +86,27 @@ export const query = graphql`
       }
     }
     amdShield: file(relativePath: { eq: "homepage/amd-shield.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    merciShield: file(relativePath: { eq: "MerciMonami-shields.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cafeteria_01: file(relativePath: { eq: "cafeteria-01.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cafeteria_02: file(relativePath: { eq: "cafeteria-02.jpg" }) {
       childImageSharp {
         fluid(quality: 80) {
           ...GatsbyImageSharpFluid
