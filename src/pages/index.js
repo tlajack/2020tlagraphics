@@ -42,6 +42,10 @@ const IndexPage = ({ data }) => (
               TLA produces and installs customized{" "}
               <Link to="/plexishields" title="plexiglass shield info">
                 plexiglass shields
+              </Link>{" "}
+              and{" "}
+              <Link to="/plexishields" title="plexiglass shield info">
+                social-distancing signage
               </Link>
               .{" "}
               <a href="mailto:info@tlagraphics.com" title="contact us!">

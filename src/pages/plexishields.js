@@ -25,7 +25,10 @@ const ShieldPage = ({ data }) => (
       <div className={styles.plexiPage}>
         <div className={styles.plexiRow}>
           <div>
-            <h1>Plexiglass Shield</h1>
+            <h1>
+              Plexiglass Shield &amp; <br />
+              Social Distancing signage
+            </h1>
             <p>Custom size, custom shape, permanent or removable.</p>
             <ul>
               <li>Sneeze Guards</li>
