@@ -380,66 +380,68 @@ const IndexPage = ({ data }) => (
             <li>
               <Link to="#merchandisingSection">Visual Merchandising</Link>
             </li>
-            <ul>
-              <li>
-                <Link to="#new">New Construction - Dental</Link>
-              </li>
-              <li>
-                <Link to="#manu">
-                  Manufacturing Partnerships, Furnishings, Furniture, Lectern
-                  Logos
-                </Link>
-              </li>
-              <li>
-                <Link to="#ret">Retail POP</Link>
-              </li>
-            </ul>
+            <li>
+              <ul>
+                <li>
+                  <Link to="#new">New Construction - Dental</Link>
+                </li>
+                <li>
+                  <Link to="#manu">
+                    Manufacturing Partnerships, Furnishings, Furniture, Lectern
+                    Logos
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#ret">Retail POP</Link>
+                </li>
+              </ul>
+            </li>
             <li>
               <Link to="#marketingSection">Marketing Collateral</Link>
+              <ul>
+                <li>
+                  <Link to="#cat">Catalogues, Brochures, Flyers</Link>
+                </li>
+                <li>
+                  <Link to="#customizedbBranding">Customized Branding</Link>
+                </li>
+              </ul>
             </li>
-            <ul>
-              <li>
-                <Link to="#cat">Catalogues, Brochures, Flyers</Link>
-              </li>
-              <li>
-                <Link to="#customizedbBranding">Customized Branding</Link>
-              </li>
-            </ul>
             <li>
               <Link to="#decorativeSection">
                 Decorative Graphic Films/Accent Graphics
               </Link>
+              <ul>
+                <li>
+                  <Link to="#arc">Architectural Frosting</Link>
+                </li>
+                <li>
+                  <Link to="#decw">
+                    Decorative Graphics, Wall Graphics Decoration
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#sec">Privacy Films</Link>
+                </li>
+                <li>
+                  <Link to="#rec">Reception Graphics, Reception Logos</Link>
+                </li>
+              </ul>
             </li>
-            <ul>
-              <li>
-                <Link to="#arc">Architectural Frosting</Link>
-              </li>
-              <li>
-                <Link to="#decw">
-                  Decorative Graphics, Wall Graphics Decoration
-                </Link>
-              </li>
-              <li>
-                <Link to="#sec">Privacy Films</Link>
-              </li>
-              <li>
-                <Link to="#rec">Reception Graphics, Reception Logos</Link>
-              </li>
-            </ul>
             <li>
               <Link to="#signageSection">Signage</Link>
+              <ul>
+                <li>
+                  <Link to="#way">Way Finding</Link>
+                </li>
+                <li>
+                  <Link to="#saf">Safety Signage</Link>
+                </li>
+                <li>
+                  <Link to="#ins">Installation Services</Link>
+                </li>
+              </ul>
             </li>
-            <ul>
-              <li>
-                <Link to="#way">Way Finding</Link>
-              </li>
-              <li>
-                <Link to="#saf">Safety Signage</Link>
-              </li>
-              <li>
-                <Link to="#ins">Installation Services</Link>
-              </li>
-            </ul>
           </ul>
 
           {/* <h3>

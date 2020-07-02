@@ -50,7 +50,7 @@ template {
 }
 
 a {
-  background-color: transparent;
+  background-color: inherit;
   -webkit-text-decoration-skip: objects;
 }
 

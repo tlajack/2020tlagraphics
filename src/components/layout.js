@@ -39,12 +39,15 @@ const Layout = ({ children }) => {
           <p>
             <a href="mailto:info@tlagraphics.com">info@tlagraphics.com</a>
           </p>
-          <p className="social_icons">
-            <a href="https://twitter.com/tlagraphics">
-              <FaTwitter />
+          <p className="social_icons" alt="twitter icon">
+            <a href="https://twitter.com/tlagraphics" title="twitter icon">
+              <FaTwitter alt="twitter icon" />
             </a>
-            <a href="https://www.facebook.com/tlagraphics/">
-              <FaFacebookF />
+            <a
+              href="https://www.facebook.com/tlagraphics/"
+              title="facebook icon"
+            >
+              <FaFacebookF alt="facebook icon" />
             </a>
             {/* <a href="https://www.facebook.com/tlagraphics/">
               <FaLinkedin />
