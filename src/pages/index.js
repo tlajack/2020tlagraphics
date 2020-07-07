@@ -567,9 +567,9 @@ export const query = graphql`
         }
       }
     }
-    receptionImage: file(relativePath: { eq: "homepage/reception.jpg" }) {
+    receptionImage: file(relativePath: { eq: "homepage/reception-01.jpg" }) {
       childImageSharp {
-        fluid(quality: 50) {
+        fluid(quality: 95) {
           ...GatsbyImageSharpFluid
         }
       }
