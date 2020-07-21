@@ -3,11 +3,9 @@ module.exports = {
     title: `TLA Graphics`, // titleTemplate: `%s · The Real Hero`,
     description: `Transforming Ideas into Stunning Visuals`,
     url: `https://tlagraphics.ca`, // No trailing slash allowed!
-    // image: `/images/snape.jpg`, // Path to your image you placed in the 'static' folder
     twitterUsername: `@tlagraphics`,
     author: `@tlagraphics`,
   },
-  // pathPrefix: `/2020-a`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
@@ -39,7 +37,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-10733405-2",
       },
     },
