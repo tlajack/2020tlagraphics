@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { FaTwitter, FaFacebookF } from "react-icons/fa"
+import { FaTwitter, FaFacebookF, FaLinkedin } from "react-icons/fa"
 
 import Header from "./header"
 require("./layout.css")
@@ -49,10 +49,10 @@ const Layout = ({ children }) => {
             >
               <FaFacebookF alt="facebook icon" />
             </a>
-            {/* <a href="https://www.facebook.com/tlagraphics/">
+            <a href="https://www.linkedin.com/in/markwhite--tla/">
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com/tlagraphics/">
+            {/* <a href="https://www.facebook.com/tlagraphics/">
               <FaYoutube />
             </a> */}
           </p>
