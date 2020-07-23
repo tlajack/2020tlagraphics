@@ -615,7 +615,7 @@ export const query = graphql`
         }
       }
     }
-    newsBanner: file(relativePath: { eq: "news-banner.jpg" }) {
+    newsBanner: file(relativePath: { eq: "homepage/facebook-banner.png" }) {
       childImageSharp {
         fluid(quality: 80) {
           ...GatsbyImageSharpFluid
