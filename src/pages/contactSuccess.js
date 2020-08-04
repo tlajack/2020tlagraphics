@@ -11,8 +11,8 @@ const ContactSuccessPage = () => (
     <SEO title="Contac Success" />
 
     <div>
-      <h2 style={{ margin: `4em`, color: `teal`, lineHeight: `1.6em` }}>
-        Thank you, your message has been submitted. <br />
+      <h2 style={{ margin: `1em`, color: `#daa520`, lineHeight: `1.6em` }}>
+        Thank you, your message has been received. <br />
         We will get in touch soon.
       </h2>
     </div>
