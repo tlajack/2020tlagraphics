@@ -1,0 +1,20 @@
+.contactContainer {
+    box-sizing: border-box;
+    padding: 1em;
+    max-width: 800px;
+    margin: auto;
+
+    ul {
+        list-style: none;
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+    }
+
+    li {
+        margin-bottom: 2em;
+    }
+}
