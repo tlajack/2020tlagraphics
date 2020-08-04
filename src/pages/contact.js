@@ -25,7 +25,7 @@ const ContactPage = () => (
       <p>Use the form below to get in touch with us:</p>
       <form
         name="webContact"
-        method="POST"
+        method="post"
         data-netlify="true"
         action="/contactSuccess"
         netlify-honeypot="bot-field"
