@@ -139,9 +139,9 @@ const Header = () => (
             </Link>
           </li> */}
           <li>
-            <a href="https://www.dropbox.com/request/FL93CCTD7UCysvFI2Pp6">
-              File Upload
-            </a>
+            <Link to="/contact" activeStyle={activeStyle}>
+              Contact us
+            </Link>
           </li>
         </ul>
       </nav>

@@ -22,6 +22,7 @@ const ContactPage = () => (
     </div>
 
     <div className={styles.contactContainer}>
+      <h1>Contact Form</h1>
       <p>Use the form below to get in touch with us:</p>
       <form
         name="webContact"
@@ -56,7 +57,10 @@ const ContactPage = () => (
             <label for="phone">phone: </label>
             <input type="text" name="phone" />
           </li>
-
+          <li>
+            <label for="subject">Subject: </label>
+            <input type="text" name="subject" />
+          </li>
           <li>
             <label for="message">Message: </label>
             <textarea name="message"></textarea>
@@ -66,6 +70,13 @@ const ContactPage = () => (
           </li>
         </ul>
       </form>
+      <h1>File Upload</h1>
+      <p>
+        <a href="https://www.dropbox.com/request/FL93CCTD7UCysvFI2Pp6">
+          Click here
+        </a>{" "}
+        to upload files to us.
+      </p>
     </div>
   </Layout>
 )
