@@ -27,23 +27,28 @@ import smokes from "../images/logos/smokes-logo.png"
 import tml from "../images/logos/tml-logo.png"
 import tfc from "../images/logos/torontoFC-logo.png"
 
-require("../components/about.css")
+import styles from "../components/about.module.css"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="About Us" />
 
-    <BgSection className="tlaSection opener" bgImage="tlaOpenerImage">
-      <img src={logo} className="tlaLogo" alt="TLA Graphics Logo" />
-      <p className="white_text">Transforming Ideas into Stunning Visuals</p>
+    <BgSection
+      className={`${styles.tlaSection} ${styles.opener}`}
+      bgImage="tlaOpenerImage"
+    >
+      <img src={logo} className={styles.tlaLogo} alt="TLA Graphics Logo" />
+      <p className={styles.white_text}>
+        Transforming Ideas into Stunning Visuals
+      </p>
     </BgSection>
 
-    <div className="tlaSection whoweare">
-      <div className="whowearePhotoContainer">
+    <div className={`${styles.tlaSection} ${styles.whoweare}`}>
+      <div className={styles.whowearePhotoContainer}>
         <img src={photoStudio} alt="design studio" />
         <img src={photoPrinter} alt="printer" />
       </div>
-      <div className="whoweareTextContainer">
+      <div className={styles.whoweareTextContainer}>
         <h1>Who we are</h1>
         <hr />
         <p>
@@ -55,30 +60,30 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className="tlaSection keySection">
+    <div className={`${styles.tlaSection} ${styles.keySection}`}>
       <h1>Key Advantages</h1>
 
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>
           Nimble six-person team — we operate like a speedboat vs. an oil tanker
         </p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Printing 98.3% of pantone colours</p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Deep expertise in innovation</p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Second generation family business</p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>3M Preferred Partner &amp; Trulife partner</p>
       </div>
     </div>
 
-    <div className="tlaSection whatwedo">
-      <div className="whatwedoTextContainer">
+    <div className={`${styles.tlaSection} ${styles.whatwedo}`}>
+      <div className={styles.whatwedoTextContainer}>
         <h1>What we do</h1>
         <hr />
         <p>
@@ -90,7 +95,7 @@ const IndexPage = () => (
           brand.
         </p>
       </div>
-      <div className="whatwedoPhotoContainer">
+      <div className={styles.whatwedoPhotoContainer}>
         <img
           src={icons}
           alt="design &amp; planning, pre-production, production, installation, shipping &amp; pick-up"
@@ -98,13 +103,13 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className="tlaSection whychooseus">
-      <div className="whychooseusPhotoContainer">
+    <div className={`${styles.tlaSection} ${styles.whychooseus}`}>
+      <div className={styles.whychooseusPhotoContainer}>
         <img src={whychoose01} alt="precision cutter by Zund" />
         <img src={whychoose02} alt="meeting room" />
       </div>
 
-      <div className="whychooseusTextContainer">
+      <div className={styles.whychooseusTextContainer}>
         <h1>Why choose us</h1>
         <hr />
         <p>
@@ -120,110 +125,130 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className="tlaSection promiseSection">
+    <div className={`${styles.tlaSection} ${styles.promiseSection}`}>
       <h1>Our promise to you</h1>
 
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Never sacrifice speed over quality</p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Meticulous attention to detail</p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Multiple eyes checking every project</p>
       </div>
-      <div className="parallelogram">
+      <div className={styles.parallelogram}>
         <p>Cutting-edge technology</p>
       </div>
     </div>
-    <div className="tlaSection brandSection">
+    <div className={`${styles.tlaSection} ${styles.brandSection}`}>
       <h1>Companies we work with </h1>
-      <div className="brandContainer">
+      <div className={styles.brandContainer}>
         <img
           src={philips}
           alt="logo philips"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Philips"
         />
         <img
           src={coke}
           alt="logo coke"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Coca-Cola"
         />
-        <img src={noble} alt="logo noble" className="tlaBrands" title="Noble" />
+        <img
+          src={noble}
+          alt="logo noble"
+          className={styles.tlaBrands}
+          title="Noble"
+        />
         <img
           src={scotia}
           alt="logo scotia"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Scotiabank Arena"
         />
-        <img src={nike} alt="logo nike" className="tlaBrands" title="Nike" />
+        <img
+          src={nike}
+          alt="logo nike"
+          className={styles.tlaBrands}
+          title="Nike"
+        />
         <img
           src={raps}
           alt="logo raps"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Toronto Raptors"
         />
         <img
           src={molson}
           alt="logo molson"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Molson"
         />
         <img
           src={canadagoose}
           alt="logo canadagoose"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Canada Goose"
         />
-        <img src={hd} alt="logo hd" className="tlaBrands" title="Home Depot" />
+        <img
+          src={hd}
+          alt="logo hd"
+          className={styles.tlaBrands}
+          title="Home Depot"
+        />
         <img
           src={smokes}
           alt="logo smokes"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Smokes Poutinerie"
         />
-        <img src={bmo} alt="logo bmo" className="tlaBrands" title="BMO Field" />
+        <img
+          src={bmo}
+          alt="logo bmo"
+          className={styles.tlaBrands}
+          title="BMO Field"
+        />
         <img
           src={tfc}
           alt="logo tfc"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Toronto FC"
         />
-        <img src={lg} alt="logo lg" className="tlaBrands" title="LG" />
+        <img src={lg} alt="logo lg" className={styles.tlaBrands} title="LG" />
         <img
           src={shoppers}
           alt="logo shoppers"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Shoppers Drugmart"
         />
         <img
           src={tml}
           alt="logo tml"
-          className="tlaBrands"
+          className={styles.tlaBrands}
           title="Toronto Maple Leafs"
         />
       </div>
     </div>
 
-    <div className="tlaSection thinkitSection">
-      <div className="thinkit">
+    <div className={`${styles.tlaSection} ${styles.thinkitSection}`}>
+      <div className={styles.thinkit}>
         <h1>You imagine it, we produce it.</h1>
-        <p className="doitLead">
+        <p className={styles.doitLead}>
           We provide creative solutions for a multitude of truly unique and
           custom projects. From custom single-piece orders to duplicates in the
           thousands—we do it all!
         </p>
-        <div className="doitRow">
-          <p className="doitColumn">
+        <div className={styles.doitRow}>
+          <p className={styles.doitColumn}>
             Our no-boundaries approach to a project ensures success in{" "}
             <strong>
               developing exclusive and one of a kind experiences to fit your
               brand purpose.
             </strong>
           </p>
-          <p className="doitColumn">
+          <p className={styles.doitColumn}>
             At TLA Graphics we recognize the needs of a brand as{" "}
             <strong>individualistic and unlike anything else. </strong>We
             acknowledge these differences by implementing a process which
@@ -233,7 +258,7 @@ const IndexPage = () => (
               what is possible.
             </strong>
           </p>
-          <p className="doitColumn">
+          <p className={styles.doitColumn}>
             If you have a project in mind please discuss it with us and we’ll be
             happy to find the correct process and{" "}
             <strong>materials specific to your unique brand needs.</strong>
@@ -242,8 +267,11 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <BgSection className="tlaSection thanks" bgImage="tlaThanksImage">
-      <div className="thanksContainer white_text">
+    <BgSection
+      className={`${styles.tlaSection} ${styles.thanks}`}
+      bgImage="tlaThanksImage"
+    >
+      <div className={`${styles.thanksContainer} ${styles.white_text}`}>
         <p>
           I would personally like to thank you for this opportunity. TLA’s
           objective is to become a valued resource partner that can assist with
@@ -258,7 +286,7 @@ const IndexPage = () => (
         </p>
         <p>Sincerely, Mark White</p>
         <img
-          className="signature"
+          className={styles.signature}
           src={markSignature}
           alt="Signature Mark White"
         />
