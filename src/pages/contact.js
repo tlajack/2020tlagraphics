@@ -30,6 +30,9 @@ const ContactPage = () => (
         action="/contactSuccess"
         netlify-honeypot="bot-field"
       >
+        {/* hidden input for netlify */}
+        <input type="hidden" name="form-name" value="contact" />
+
         <ul>
           <li style={{ visibility: `hidden`, display: `none` }}>
             <label for="bot-field"></label>
