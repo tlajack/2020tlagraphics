@@ -28,8 +28,13 @@ const ContactPage = () => (
         method="POST"
         data-netlify="true"
         action="/contactSuccess"
+        netlify-honeypot="bot-field"
       >
         <ul>
+          <li style={{ visibility: `hidden`, display: `none` }}>
+            <label for="bot-field"></label>
+            <input name="bot-field" />
+          </li>
           <li>
             <label for="name">Full name: </label>
             <abbr title="required" aria-label="required">
