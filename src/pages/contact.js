@@ -23,7 +23,12 @@ const ContactPage = () => (
 
     <div className={styles.contactContainer}>
       <p>Use the form below to get in touch with us:</p>
-      <form name="webContact" method="POST" data-netlify="true">
+      <form
+        name="webContact"
+        method="POST"
+        data-netlify="true"
+        action="/contactSuccess"
+      >
         <ul>
           <li>
             <label for="name">Full name: </label>
