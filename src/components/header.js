@@ -9,7 +9,8 @@ const clickHandler = () => {
 }
 
 const activeStyle = {
-  color: "rgb(0, 182, 182)",
+  backgroundColor: "teal",
+  borderRadius: "10px",
 }
 
 const Header = () => (

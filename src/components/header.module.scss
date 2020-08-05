@@ -2,7 +2,7 @@
   background-color: gray;
   width: 100%;
 
-  li > ul {
+  li>ul {
     margin: 0;
   }
 
@@ -10,19 +10,24 @@
     margin: 0;
     padding: 0;
   }
+
   img {
     margin: 0;
   }
+
   a {
     text-decoration: none;
     color: white;
   }
+
   a:hover {
     color: rgb(0, 182, 182);
   }
+
   ul {
     list-style: none;
   }
+
   .container {
     width: 100%;
     max-width: 117rem;
@@ -51,9 +56,11 @@
     color: rgb(0, 182, 182);
     transition: all 650ms ease;
   }
+
   .icon-dropdown::before {
     content: " ";
   }
+
   a:hover .icon-dropdown {
     color: white;
   }
@@ -76,6 +83,7 @@
   .logo {
     position: absolute;
   }
+
   .logo img {
     height: 80px;
   }
@@ -97,7 +105,7 @@
   }
 
   .nav_list a:hover {
-    color: teal;
+    color: rgb(0, 230, 230);
   }
 
   .sub-menu {
@@ -123,18 +131,19 @@
     left: 116%;
   }
 
-  .nav_list li:hover > .sub-menu {
+  .nav_list li:hover>.sub-menu {
     top: 90px;
     opacity: 1;
     visibility: visible;
   }
 
-  .sub-menu li:hover > .sub-menu {
+  .sub-menu li:hover>.sub-menu {
     left: 100%;
     top: 0;
     opacity: 1;
     visibility: visible;
   }
+
   .nav_list {
     position: fixed;
     top: 0;
@@ -153,7 +162,7 @@
     color: red;
   }
 
-  .nav_list > li {
+  .nav_list>li {
     font-size: 1.3em;
     line-height: 1.5em;
     margin-top: 2em;
@@ -172,7 +181,7 @@
     display: none;
   }
 
-  .nav_list li:hover > .sub-menu {
+  .nav_list li:hover>.sub-menu {
     opacity: 1;
     visibility: visible;
     max-height: initial;
@@ -190,6 +199,7 @@
   nav.active .icon_close {
     display: block;
   }
+
   nav.active .icon_menu {
     display: none;
   }
@@ -199,10 +209,12 @@
     left: 50vw;
     background-color: rgba(30, 30, 30, 0.7);
   }
+
   @media screen and (min-width: 720px) {
     .icon_menu {
       display: none;
     }
+
     .nav_list {
       position: relative;
       display: flex;
@@ -217,6 +229,7 @@
       margin: auto;
       transition: unset;
     }
+
     .nav_list li {
       margin-top: 0;
       font-size: unset;
