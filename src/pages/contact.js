@@ -36,33 +36,34 @@ const ContactPage = () => (
 
         <ul>
           <li style={{ visibility: `hidden`, display: `none` }}>
-            <label for="bot-field"></label>
-            <input name="bot-field" />
+            <label htmlFor="bot-field">
+              <input name="bot-field" />
+            </label>
           </li>
           <li>
-            <label for="name">Full name: </label>
+            <label htmlFor="name">Full name: </label>
             <abbr title="required" aria-label="required">
               *
             </abbr>
             <input type="text" name="name" />
           </li>
           <li>
-            <label for="email">email: </label>
+            <label htmlFor="email">email: </label>
             <abbr title="required" aria-label="required">
               *
             </abbr>
             <input type="text" name="email" />
           </li>
           <li>
-            <label for="phone">phone: </label>
+            <label htmlFor="phone">phone: </label>
             <input type="text" name="phone" />
           </li>
           <li>
-            <label for="subject">Subject: </label>
+            <label htmlFor="subject">Subject: </label>
             <input type="text" name="subject" />
           </li>
           <li>
-            <label for="message">Message: </label>
+            <label htmlFor="message">Message: </label>
             <textarea name="message"></textarea>
           </li>
           <li>
