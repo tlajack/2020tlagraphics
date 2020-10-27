@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { TwitterTimelineEmbed } from "react-twitter-embed"
+// import { TwitterTimelineEmbed } from "react-twitter-embed"
 import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
