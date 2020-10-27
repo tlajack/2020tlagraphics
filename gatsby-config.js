@@ -3,7 +3,7 @@ module.exports = {
     title: `TLA Graphics`,
     description: `Transforming Ideas into Stunning Visuals`,
     url: `https://tlagraphics.ca`,
-    siteUrl: `https://tlagraphics.ca`,
+    siteUrl: `https://tlagraphics.com`,
     twitterUsername: `@tlagraphics`,
     author: `@tlagraphics`,
   },
