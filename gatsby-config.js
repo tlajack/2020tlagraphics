@@ -3,10 +3,17 @@ module.exports = {
     title: `TLA Graphics`,
     description: `Transforming Ideas into Stunning Visuals`,
     url: `https://tlagraphics.ca`,
+    siteUrl: `https://tlagraphics.ca`,
     twitterUsername: `@tlagraphics`,
     author: `@tlagraphics`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/blog`, `/contactSuccess`, `/resource`],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
