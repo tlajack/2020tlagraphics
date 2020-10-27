@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `TLA Graphics`, // titleTemplate: `%s · The Real Hero`,
+    title: `TLA Graphics`,
     description: `Transforming Ideas into Stunning Visuals`,
-    url: `https://tlagraphics.ca`, // No trailing slash allowed!
+    url: `https://tlagraphics.ca`,
     twitterUsername: `@tlagraphics`,
     author: `@tlagraphics`,
   },

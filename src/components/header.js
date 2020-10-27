@@ -23,6 +23,7 @@ const Header = () => (
           tabIndex={0}
           onClick={clickHandler}
           onKeyDown={clickHandler}
+          aria-label="mobile menu open and close"
         >
           <i id="iconMenu" className={headerStyles.icon_menu}>
             &#10010;
