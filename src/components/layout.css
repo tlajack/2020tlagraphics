@@ -709,6 +709,7 @@ pre tt:after {
   display: block;
   margin: auto;
   width: 400px;
+  filter:drop-shadow(0 0 3px rgba(0,0,0,.5));
 }
 
 #top {
@@ -741,7 +742,7 @@ footer > * {
 
 .social_icons a {
   display: inline-block;
-  padding: 5px;
+  padding: 7px;
   font-size: 1em;
   width: 2em;
   height: 2em;
@@ -750,6 +751,11 @@ footer > * {
   border-radius: 50%;
   background-color: teal;
   margin: 0 0.5em;
+  
+}
+
+.social_icons a svg{
+  filter:drop-shadow(0 0 3px rgba(0,0,0,.5));
 }
 
 .social_icons a:hover {
@@ -776,13 +782,14 @@ div.row {
 }
 
 .placeholder {
-  background-color: lightgray;
   height: 100%;
   width: 100%;
   padding: 0;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
 }
 
 .footer .footerLogo {
+  background-color: lightgray;
   padding: 0;
 }
 
