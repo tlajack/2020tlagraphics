@@ -68,7 +68,32 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.tlagraphics.com",
+          "name": "TLA Graphics",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-905-726-2600",
+            "contactType": "Customer Support"
+          },
+          "ProfessionalService":{
+            "slogan": "Transforming Ideas into Stunning Visuals",
+            "logo":"https://tlagraphics.com/tla-logo-oneColor-teal.jpg"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 44.0099073,
+            "longitude": -79.4116609
+          },
+        }
+      `}
+      </script>
+    </Helmet>
   )
 }
 
