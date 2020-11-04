@@ -460,7 +460,7 @@ const IndexPage = ({ data }) => (
             screenName="tlagraphics"
             options={{ height: 600 }}
           /> */}
-          <img className="placeholder" src={placeholder} alt="" />
+          <img className="placeholder" src={placeholder} alt="tla logo" />
         </div>
       </div>
     </div>
