@@ -89,7 +89,7 @@ function SEO({ description, lang, meta, title }) {
             "@type": "GeoCoordinates",
             "latitude": 44.0099073,
             "longitude": -79.4116609
-          },
+          }
         }
       `}
       </script>
