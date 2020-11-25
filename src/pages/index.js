@@ -10,12 +10,14 @@ import GridItem from "../components/gridItem"
 
 import placeholder from "../images/logo-optimized.svg"
 import virus from "../images/icon-virus.svg"
+import Carousel from "../components/Carousel"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
 
     <div className="container">
+      <Carousel />
       {/* <!-- HERO SECTION --> */}
       {/* <div className="hero">
         <img className="placeholder" src={placeholder} alt="" />
