@@ -27,9 +27,9 @@ const Layout = ({ children }) => {
             <Link to="/">TLA Graphics</Link>
           </p>
           <p>
-            158 Don Hillock Dr. Unit 11
+            4 Paisley Lane
             <br />
-            Aurora, ON L4G 0G9
+            Stouffville, ON L4A 7X4
           </p>
         </div>
         <div>
