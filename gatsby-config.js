@@ -24,7 +24,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           {
@@ -37,6 +37,7 @@ module.exports = {
             variants: [`400`],
           },
         ],
+        display: "swap",
       },
     },
     `gatsby-transformer-sharp`,
