@@ -23,23 +23,23 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Proza Libre`,
-            // subsets: [`latin`],
-            variants: [`700`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`],
-          },
-        ],
-        display: "swap",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Proza Libre`,
+    //         // subsets: [`latin`],
+    //         variants: [`700`],
+    //       },
+    //       {
+    //         family: `Open Sans`,
+    //         variants: [`400`],
+    //       },
+    //     ],
+    //     display: "swap",
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
