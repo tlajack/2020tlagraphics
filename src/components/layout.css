@@ -843,6 +843,10 @@ div.row {
   text-shadow: 1px 1px 5px rgb(60, 60, 60);
 }
 
+.sectionTitleExtraSpc{
+  margin-bottom: 3em;
+}
+
 .service_row {
   background-color: #00a19b;
 }
@@ -1042,7 +1046,7 @@ div#signage {
 @media only screen and (min-width: 720px) {
   #news {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #topTwitterFeed {

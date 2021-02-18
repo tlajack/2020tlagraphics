@@ -52,9 +52,6 @@ const Layout = ({ children }) => {
             <a href="https://www.linkedin.com/in/markwhite--tla/">
               <FaLinkedin />
             </a>
-            {/* <a href="https://www.facebook.com/tlagraphics/">
-              <FaYoutube />
-            </a> */}
           </p>
         </div>
         <div>

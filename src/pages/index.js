@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { TwitterTimelineEmbed } from "react-twitter-embed"
+// import { TwitterTimelineEmbed } from "react-twitter-embed"
 import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
@@ -91,13 +91,13 @@ const IndexPage = ({ data }) => (
           </div>
         </div>
 
-        <div id="topTwitterFeed">
+        {/* <div id="topTwitterFeed">
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName="tlagraphics"
             options={{ height: "100%" }}
           />
-        </div>
+        </div> */}
       </div>
       {/* <!-- SERVICES SECTION --> */}
       <div className="row service_row">
@@ -140,7 +140,9 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- Visual Mech SECTION --> */}
       <div className="row merch_row" id="merchandisingSection">
-        <h1 className="sectionTitle">VISUAL MERCHANDISING</h1>
+        <h1 className="sectionTitle sectionTitleExtraSpc">
+          VISUAL MERCHANDISING
+        </h1>
         <div id="merch">
           <GridItem id="new">
             <Img
@@ -187,7 +189,7 @@ const IndexPage = ({ data }) => (
               <h1>Retail POP</h1>
               <ul>
                 <li>POP Signage and graphics</li>
-                <li>POP display / POP displays</li>
+                <li>POP displays</li>
                 <li>Point of sale display ideas </li>
                 <li>Point of purchase examples </li>
                 <li>Types of POP material / POP material examples</li>
@@ -199,7 +201,9 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- Marketing Collateral SECTION --> */}
       <div className="row marketing_row" id="marketingSection">
-        <h1 className="sectionTitle">MARKETING COLLATERAL</h1>
+        <h1 className="sectionTitle sectionTitleExtraSpc">
+          MARKETING COLLATERAL
+        </h1>
         <div id="marketing">
           <GridItem id="cat">
             <Img
@@ -210,9 +214,7 @@ const IndexPage = ({ data }) => (
             <div className="subsectionList">
               <h1>Catalogues, Brochures, Flyers</h1>
               <ul>
-                <li>Catalogue design and print</li>
                 <li>Catalogue design and print services</li>
-                <li>Catalogue design services</li>
               </ul>
             </div>
           </GridItem>
@@ -238,7 +240,7 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- Decorative SECTION --> */}
       <div className="row decorative_row" id="decorativeSection">
-        <h1 className="sectionTitle">
+        <h1 className="sectionTitle sectionTitleExtraSpc">
           DECORATIVE GRAPHIC FILMS / ACCENT GRAPHICS
         </h1>
         <div id="decorative">
@@ -255,7 +257,7 @@ const IndexPage = ({ data }) => (
                 <li>Architectural window film</li>
                 <li>Architectural film</li>
                 <li>Office glass design</li>
-                <li>Office glass door design / Best office glass design </li>
+                <li>Office glass door design </li>
                 <li>Frosted glass door design</li>
               </ul>
             </div>
@@ -315,7 +317,7 @@ const IndexPage = ({ data }) => (
 
       {/* <!-- Signage SECTION --> */}
       <div className="row signage_row" id="signageSection">
-        <h1 className="sectionTitle">SIGNAGE</h1>
+        <h1 className="sectionTitle sectionTitleExtraSpc">SIGNAGE</h1>
         <div id="signage">
           <GridItem id="way">
             <Img
@@ -329,10 +331,6 @@ const IndexPage = ({ data }) => (
                 <li>Wayfinding and sign design</li>
                 <li>Wayfinding signage systems</li>
                 <li>Digital wayfinding signage</li>
-                <li>Wayfinding signage design firms</li>
-                <li>Signage and wayfinding consultants</li>
-                <li>Environmental graphic design firms</li>
-                <li>Wayfinding firms</li>
               </ul>
             </div>
           </GridItem>
