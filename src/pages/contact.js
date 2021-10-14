@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "../components/contact.module.scss"
+import styles from "../components/contact.module.css"
 import Logo from "../images/logo-white.svg"
 
 const ContactPage = () => (

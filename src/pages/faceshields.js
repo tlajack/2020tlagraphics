@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
-import styles from "../components/faceshields.module.scss"
+import styles from "../components/faceshields.module.css"
 import Logo from "../images/logo-white.svg"
 
 const IndexPage = ({ data }) => (

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Logo from "../images/logo-white.svg"
-import headerStyles from "./header.module.scss"
+import headerStyles from "./header.module.css"
 
 const clickHandler = () => {
   document.getElementById("nav").classList.toggle(headerStyles.active)

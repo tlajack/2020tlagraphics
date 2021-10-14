@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "../components/antimicrobial.module.scss"
+import styles from "../components/antimicrobial.module.css"
 import virus from "../images/icon-virus.svg"
 import shield from "../images/icon-shield.svg"
 import snap from "../images/icon-snap.svg"

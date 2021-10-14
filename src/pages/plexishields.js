@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Logo from "../images/logo-white.svg"
-import styles from "../components/plexiglass.module.scss"
+import styles from "../components/plexiglass.module.css"
 
 const ShieldPage = ({ data }) => (
   <Layout>
