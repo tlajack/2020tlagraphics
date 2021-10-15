@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
           <p>
             4 Paisley Lane
             <br />
-            Stouffville, ON L4A 7X4
+            Uxbridge, Ontario L9P 0G5
           </p>
         </div>
         <div>

@@ -1008,7 +1008,6 @@ div#signage {
 
 #newsBanner {
   min-height: 25em;
-  /* background-position: bottom !important; */
 }
 
 #news img {
@@ -1073,6 +1072,8 @@ div#signage {
   }
 
   #newsBanner {
+    background-position: center center !important;
+
     grid-column: 1/4;
   }
 

@@ -13,12 +13,13 @@
 
   img {
     margin: 0;
+    margin-bottom:0;
   }
 
   a {
     text-decoration: none;
     color: white;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.6); */
   }
 
   a:hover {
@@ -104,6 +105,7 @@
     padding: 0 2em;
     font-weight: bold;
     transition: color 650ms;
+    color:white;
   }
 
   .nav_list a:hover {
