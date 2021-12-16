@@ -1058,7 +1058,7 @@ div#signage {
 @media only screen and (min-width: 720px) {
   #news {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   #topTwitterFeed {
@@ -1086,15 +1086,14 @@ div#signage {
     align-self: auto;
   }
 
-  .newsCopy {
+  /* .newsCopy {
     align-self: auto;
-    /* min-height: 150px; */
     margin-top: 1em;
-  }
+  } */
 
-  .newsItem {
+  /* .newsItem {
     grid-template-columns: 1fr;
-  }
+  } */
 
   .merch_row .gridImg {
     width: 100%;

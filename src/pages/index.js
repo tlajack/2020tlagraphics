@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => (
             </p>
           </div>
         </div>
-        <div className="newsItem">
+        {/* <div className="newsItem">
           <div className="newsPhoto">
             <Link to="/faceshields" title="faceshields info">
               <Img
@@ -89,7 +89,7 @@ const IndexPage = ({ data }) => (
               . We customize and install.
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* <div id="topTwitterFeed">
           <TwitterTimelineEmbed
