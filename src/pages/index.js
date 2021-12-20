@@ -9,7 +9,6 @@ import SEO from "../components/seo"
 import GridItem from "../components/gridItem"
 
 import placeholder from "../images/logo-optimized.svg"
-import virus from "../images/icon-virus.svg"
 
 const IndexPage = ({ data }) => (
   <Layout>
