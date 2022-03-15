@@ -1,27 +1,63 @@
-import React from "react"
-import { Link } from "gatsby"
-// import Img from "gatsby-image"
+import React from "react";
+// import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import styles from "../components/contact.module.css"
-import Logo from "../images/logo-white.svg"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import styled from "styled-components";
+
+const ContactContainer = styled.div`
+  /* min-height: 70vh; */
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  abbr {
+    text-decoration: none;
+  }
+  li {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+  label {
+    text-align: left;
+    margin: 0 0 1rem;
+  }
+  input,
+  textarea {
+    border: 1px solid gray;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #eeeeee;
+  }
+  input {
+  }
+  abbr[title] {
+    text-decoration: none;
+  }
+  button {
+    border-radius: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: lightskyblue;
+    &:hover {
+      background-color: lightseagreen;
+      color: white;
+    }
+  }
+  * + h1 {
+    margin-top: 3em;
+  }
+`;
 
 const ContactPage = () => (
-  <Layout id="antimicrobialMain">
-    <SEO title="Contac Us" />
-    <div
-      style={{
-        background: `teal`,
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <Link to="/">
-        <img className="topLogo" src={Logo} alt="TLA Graphics Logo" />
-      </Link>
-    </div>
+  <Layout>
+    <Seo title="Contact Us" />
 
-    <div className={styles.contactContainer}>
+    <ContactContainer>
       <h1>Contact Form</h1>
       <p>Use the form below to get in touch with us:</p>
       <form
@@ -41,17 +77,11 @@ const ContactPage = () => (
             </label>
           </li>
           <li>
-            <label htmlFor="name">Full name: </label>
-            <abbr title="required" aria-label="required">
-              *
-            </abbr>
+            <label htmlFor="name">Full name:</label>
             <input type="text" name="name" />
           </li>
           <li>
-            <label htmlFor="email">email: </label>
-            <abbr title="required" aria-label="required">
-              *
-            </abbr>
+            <label htmlFor="email">email:</label>
             <input type="text" name="email" />
           </li>
           <li>
@@ -64,7 +94,7 @@ const ContactPage = () => (
           </li>
           <li>
             <label htmlFor="message">Message: </label>
-            <textarea name="message"></textarea>
+            <textarea name="message" rows="4"></textarea>
           </li>
           <li>
             <button type="submit">Send Message</button>
@@ -78,8 +108,8 @@ const ContactPage = () => (
         </a>{" "}
         to upload files to us.
       </p>
-    </div>
+    </ContactContainer>
   </Layout>
-)
+);
 
-export default ContactPage
+export default ContactPage;

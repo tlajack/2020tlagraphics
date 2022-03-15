@@ -1,76 +1,45 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from "react";
+import PropTypes from "prop-types";
+// import { Link } from "gatsby";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
 
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import { FaTwitter, FaFacebookF, FaLinkedin } from "react-icons/fa"
+import styled from "styled-components";
+import "normalize.css";
+import GlobalStyles from "./globalStyles";
 
-import Header from "./header"
-require("./layout.css")
+const Container = styled.div`
+  /* max-width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  main {
+    flex: 1 0 auto;
+  }
+`;
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Header id="top" />
-
+    <Container>
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+      </Helmet>
+      <GlobalStyles />
+      <Header />
       <main>{children}</main>
-      <footer>
-        <div>
-          <p>
-            © {new Date().getFullYear()}, Built by
-            {` `}
-            <Link to="/">TLA Graphics</Link>
-          </p>
-          <p>
-            4 Paisley Lane
-            <br />
-            Uxbridge, Ontario L9P 0G5
-          </p>
-        </div>
-        <div>
-          <p>
-            <a href="tel:1-905-726-2600">+1 (905) 726-2600</a>
-          </p>
-          <p>
-            <a href="mailto:info@tlagraphics.com">info@tlagraphics.com</a>
-          </p>
-          <p className="social_icons" alt="twitter icon">
-            <a href="https://twitter.com/tlagraphics" title="twitter icon">
-              <FaTwitter alt="twitter icon" />
-            </a>
-            <a
-              href="https://www.facebook.com/tlagraphics/"
-              title="facebook icon"
-            >
-              <FaFacebookF alt="facebook icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/markwhite--tla/">
-              <FaLinkedin />
-            </a>
-          </p>
-        </div>
-        <div>
-          <a href="#top">
-            <span className="to-the-top-long">
-              To the top{" "}
-              <span className="arrow" aria-hidden="true">
-                ↑
-              </span>
-            </span>
-          </a>
-        </div>{" "}
-      </footer>
-    </>
-  )
-}
+      <Footer />
+    </Container>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

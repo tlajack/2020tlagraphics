@@ -8,59 +8,25 @@ module.exports = {
     author: `@tlagraphics`,
   },
   plugins: [
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        exclude: [`/blog`, `/contactSuccess`, `/resource`],
+        icon: "src/images/icon.png",
       },
     },
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: "images",
+        path: "./src/images/",
       },
+      __key: "images",
     },
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: `Proza Libre`,
-    //         // subsets: [`latin`],
-    //         variants: [`700`],
-    //       },
-    //       {
-    //         family: `Open Sans`,
-    //         variants: [`400`],
-    //       },
-    //     ],
-    //     display: "swap",
-    //   },
-    // },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-10733405-2",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#00a19b`,
-        theme_color: `#00a19b`,
-        display: `minimal-ui`,
-        icon: `src/images/tla-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
-}
+};

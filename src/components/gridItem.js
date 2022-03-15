@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const GridItem = ({id, itemClass, children}) => (
-	<div className={`grid_items ${itemClass}`}>
-		<div id={id} className="items">
-			{children}
-		</div>
-	</div>
-)
+const GridItem = ({ id, itemClass, children }) => (
+  <div className={`grid_items ${itemClass}`}>
+    <div id={id} className="items">
+      {children}
+    </div>
+  </div>
+);
 
-export default GridItem
+export default GridItem;
