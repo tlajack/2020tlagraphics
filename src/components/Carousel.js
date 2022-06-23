@@ -1,11 +1,11 @@
-import React from "react";
-import Slider from "react-slick";
-import { StaticImage } from "gatsby-plugin-image";
-import styled from "styled-components";
+import React from "react"
+import Slider from "react-slick"
+import { StaticImage } from "gatsby-plugin-image"
+import styled from "styled-components"
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "./Carousel.css"
 
 const SlideBox = styled.div`
   background-color: black !important;
@@ -28,7 +28,7 @@ const SlideBox = styled.div`
     text-shadow: 2px 2px 4px rgb(0 0 0 / 80%);
     font-family: "Montserrat", sans-serif;
   }
-`;
+`
 
 const Carousel = () => {
   const settings = {
@@ -40,9 +40,16 @@ const Carousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
-  };
+  }
   return (
     <Slider {...settings}>
+      <SlideBox>
+        <StaticImage
+          src="../images/homepage/LG-03.jpg"
+          alt="dimensional sign"
+        />
+        <div className="label">Dimensional Sign</div>
+      </SlideBox>
       <SlideBox>
         <StaticImage
           src="../images/homepage/dosequis-04.jpg"
@@ -77,13 +84,6 @@ const Carousel = () => {
       </SlideBox>
       <SlideBox>
         <StaticImage
-          src="../images/homepage/MerciMonami-shields-sq.jpg"
-          alt="Merci Mon Ami - shield and signage"
-        />
-        <div className="label">Acryllic Shield</div>
-      </SlideBox>
-      <SlideBox>
-        <StaticImage
           src="../images/homepage/tla-presentation14-sq.jpg"
           alt="Frost panels "
         />
@@ -101,7 +101,7 @@ const Carousel = () => {
         <div className="label">Vehicle Vinyl Wrap</div>
       </SlideBox>
     </Slider>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel
