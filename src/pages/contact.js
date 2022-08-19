@@ -65,7 +65,6 @@ const ContactPage = () => (
         method="post"
         data-netlify="true"
         action="/contactSuccess"
-        netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
       >
         {/* hidden input for netlify */}
