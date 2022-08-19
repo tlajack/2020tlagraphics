@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
+import React, { useState } from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
 // import { StaticImage } from "gatsby-plugin-image";
-import logo from "../images/icon-white.png";
+import logo from "../images/icon-white.png"
 
 const navlinks = [
   {
@@ -13,11 +13,11 @@ const navlinks = [
     name: "About",
     slug: "/about",
   },
-  {
-    name: "Contact",
-    slug: "/contact",
-  },
-];
+  // {
+  //   name: "Contact",
+  //   slug: "/contact",
+  // },
+]
 
 const TheNav = styled.div`
   background-color: var(--primary);
@@ -181,7 +181,7 @@ const TheNav = styled.div`
       bottom: 7px;
     }
   }
-`;
+`
 
 function renderSublinks(x) {
   return (
@@ -194,14 +194,14 @@ function renderSublinks(x) {
         </li>
       ))}
     </ul>
-  );
+  )
 }
 
 const Header = () => {
-  const [menuState, setMenuState] = useState(false);
+  const [menuState, setMenuState] = useState(false)
 
   function clickHandler() {
-    setMenuState(!menuState);
+    setMenuState(!menuState)
   }
 
   return (
@@ -230,7 +230,7 @@ const Header = () => {
         <span className="bars"></span>
       </div>
     </TheNav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
