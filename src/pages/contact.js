@@ -62,19 +62,11 @@ const ContactPage = () => (
       <p>Use the form below to get in touch with us:</p>
       <form
         name="webContact"
-        method="post"
-        data-netlify="true"
+        method="POST"
         data-netlify-recaptcha="true"
+        data-netlify="true"
       >
-        {/* hidden input for netlify */}
-        <input type="hidden" name="form-name" value="webContact" />
-
         <ul>
-          <li style={{ visibility: `hidden`, display: `none` }}>
-            <label htmlFor="bot-field">
-              <input name="bot-field" />
-            </label>
-          </li>
           <li>
             <label htmlFor="name">Full name:</label>
             <input type="text" name="name" />
