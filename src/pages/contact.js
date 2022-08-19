@@ -100,6 +100,7 @@ const ContactPage = () => (
           </li>
         </ul>
       </form>
+      <div data-netlify-recaptcha="true"></div>
       <h1>File Upload</h1>
       <p>
         <a href="https://www.dropbox.com/request/FL93CCTD7UCysvFI2Pp6">
