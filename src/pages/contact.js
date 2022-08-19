@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"
 // import { Link } from "gatsby";
 
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import styled from "styled-components";
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import styled from "styled-components"
 
 const ContactContainer = styled.div`
   /* min-height: 70vh; */
@@ -51,7 +51,7 @@ const ContactContainer = styled.div`
   * + h1 {
     margin-top: 3em;
   }
-`;
+`
 
 const ContactPage = () => (
   <Layout>
@@ -66,6 +66,7 @@ const ContactPage = () => (
         data-netlify="true"
         action="/contactSuccess"
         netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
       >
         {/* hidden input for netlify */}
         <input type="hidden" name="form-name" value="webContact" />
@@ -110,6 +111,6 @@ const ContactPage = () => (
       </p>
     </ContactContainer>
   </Layout>
-);
+)
 
-export default ContactPage;
+export default ContactPage
