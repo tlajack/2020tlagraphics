@@ -64,7 +64,6 @@ const ContactPage = () => (
         name="webContact"
         method="post"
         data-netlify="true"
-        action="/contactSuccess"
         data-netlify-recaptcha="true"
       >
         {/* hidden input for netlify */}
