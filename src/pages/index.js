@@ -1,10 +1,10 @@
-import * as React from "react";
-import Seo from "../components/seo";
-import { StaticImage } from "gatsby-plugin-image";
-import Layout from "../components/layout";
-import Carousel from "../components/Carousel";
-import TlaServices from "../components/TlaServices";
-import styled from "styled-components";
+import * as React from "react"
+import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
+import Carousel from "../components/Carousel"
+import TlaServices from "../components/TlaServices"
+import styled from "styled-components"
 
 const HomeContent = styled.div`
   h1 {
@@ -133,7 +133,7 @@ const HomeContent = styled.div`
       margin-bottom: 0;
     }
   }
-`;
+`
 
 const IndexPage = () => {
   return (
@@ -350,7 +350,7 @@ const IndexPage = () => {
             <div className="gridItems" id="saf">
               <StaticImage
                 className="gridImg"
-                src="../images/homepage/coronaSign.jpg"
+                src="../images/homepage/safetySignage.png"
                 alt="business poster"
               />
               <div className="subsectionList">
@@ -384,7 +384,7 @@ const IndexPage = () => {
         </div>
       </HomeContent>
     </Layout>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage

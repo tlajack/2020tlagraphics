@@ -1,36 +1,36 @@
-import React from "react";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import { StaticImage } from "gatsby-plugin-image";
-import styled from "styled-components";
+import React from "react"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
+import styled from "styled-components"
 
-import introImage from "../images/Toronto-Scrapers.jpg";
-import whoImage from "../images/bg-whoweare.jpg";
-import imaginebg from "../images/bg-imagine.jpg";
-import thanksbg from "../images/bg-thanks.jpg";
+import introImage from "../images/Toronto-Scrapers.jpg"
+import whoImage from "../images/bg-whoweare.jpg"
+import imaginebg from "../images/bg-imagine.jpg"
+import thanksbg from "../images/bg-thanks.jpg"
 
-const logo = "../images/tla-logo-tealwhite.png";
-const photoStudio = "../images/whoweare-01.jpg";
-const photoPrinter = "../images/whoweare-02.png";
-const icons = "../images/icons.png";
-const markSignature = "../images/Mark-signature.png";
-const whychoose01 = "../images/whychooseus-01.jpg";
-const whychoose02 = "../images/whychooseus-02.png";
-const bmo = "../images/logos/BMO-logo.png";
-const canadagoose = "../images/logos/canadagoose-logo.png";
-const coke = "../images/logos/coke-logo.png";
-const hd = "../images/logos/homedepot-logo.png";
-const lg = "../images/logos/LG-logo.png";
-const molson = "../images/logos/molson-logo.png";
-const nike = "../images/logos/nike-logo.png";
-const noble = "../images/logos/noble-logo.png";
-const philips = "../images/logos/philips-logo.png";
-const raps = "../images/logos/raptors-logo.png";
-const scotia = "../images/logos/scotiabankarena-logo.png";
-const shoppers = "../images/logos/shoppers-logo.png";
-const smokes = "../images/logos/smokes-logo.png";
-const tml = "../images/logos/tml-logo.png";
-const tfc = "../images/logos/torontoFC-logo.png";
+const logo = "../images/tla-logo-tealwhite.png"
+const photoStudio = "../images/whoweare-01.jpg"
+const photoPrinter = "../images/whoweare-02.png"
+const icons = "../images/icons.png"
+const markSignature = "../images/Mark-signature.png"
+const whychoose01 = "../images/whychooseus-01.jpg"
+const whychoose02 = "../images/whychooseus-02.png"
+const bmo = "../images/logos/BMO-logo.png"
+const canadagoose = "../images/logos/canadagoose-logo.png"
+const coke = "../images/logos/coke-logo.png"
+const hd = "../images/logos/homedepot-logo.png"
+const lg = "../images/logos/LG-logo.png"
+const molson = "../images/logos/molson-logo.png"
+const nike = "../images/logos/nike-logo.png"
+const noble = "../images/logos/noble-logo.png"
+const philips = "../images/logos/philips-logo.png"
+const raps = "../images/logos/raptors-logo.png"
+const scotia = "../images/logos/scotiabankarena-logo.png"
+const shoppers = "../images/logos/shoppers-logo.png"
+const smokes = "../images/logos/smokes-logo.png"
+const tml = "../images/logos/tml-logo.png"
+const tfc = "../images/logos/torontoFC-logo.png"
 
 const AboutContainer = styled.div`
   width: 100%;
@@ -271,7 +271,7 @@ const AboutContainer = styled.div`
       grid-row: 4/5;
     }
   }
-`;
+`
 
 const AboutPage = () => (
   <Layout>
@@ -310,10 +310,7 @@ const AboutPage = () => (
       <div className="section key">
         <h1>Key Advantages</h1>
         <div className="parallelogram">
-          <p>
-            Nimble six-person team — we operate like a speedboat vs. an oil
-            tanker
-          </p>
+          <p>High end production equipment</p>
         </div>
         <div className="parallelogram">
           <p>Printing 98.3% of pantone colours</p>
@@ -543,6 +540,6 @@ const AboutPage = () => (
       </div>
     </AboutContainer>
   </Layout>
-);
+)
 
-export default AboutPage;
+export default AboutPage
