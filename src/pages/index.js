@@ -221,13 +221,14 @@ const IndexPage = () => {
             <div className="gridItems" id="cat">
               <StaticImage
                 className="gridImg"
-                src="../images/homepage/nathan-anderson-gIzUiKf4hp8-unsplash.jpg"
+                src="../images/homepage/decals.jpg"
                 alt="Kodak catalogue"
               />
               <div className="subsectionList">
-                <h3>Catalogues, Brochures, Flyers</h3>
+                <h3>Print production</h3>
                 <ul>
                   <li>Catalogue design and print services</li>
+                  <li>Catalogues, brochures, decals, posters, tags, coupons</li>
                 </ul>
               </div>
             </div>

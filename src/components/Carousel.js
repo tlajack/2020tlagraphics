@@ -59,6 +59,13 @@ const Carousel = () => {
       </SlideBox>
       <SlideBox>
         <StaticImage
+          src="../images/homepage/nobleStratford.jpg"
+          alt="Backlit Custom Logo"
+        />
+        <div className="label">Backlit Custom Signage</div>
+      </SlideBox>
+      <SlideBox>
+        <StaticImage
           src="../images/homepage/displayCase-01.png"
           alt="Display Case"
         />
