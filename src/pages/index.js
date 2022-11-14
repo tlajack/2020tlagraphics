@@ -229,6 +229,7 @@ const IndexPage = () => {
                 <ul>
                   <li>Catalogue design and print services</li>
                   <li>Catalogues, brochures, decals, posters, tags, coupons</li>
+                  <li>Industrial decals</li>
                 </ul>
               </div>
             </div>
@@ -279,7 +280,7 @@ const IndexPage = () => {
             <div className="gridItems" id="decw">
               <StaticImage
                 className="gridImg"
-                src="../images/homepage/scott-webb-NQymDb5XqC4-unsplash.jpg"
+                src="../images/homepage/wallgraphics.jpg"
                 alt="Large wall graphics"
               />
               <div className="subsectionList">
@@ -290,6 +291,7 @@ const IndexPage = () => {
                   <li>Custom wall wraps</li>
                   <li>Wall graphics for businesses / offices</li>
                   <li>Wall and floor decals</li>
+                  <li>Photo Tex™ fabric prints</li>
                 </ul>
               </div>
             </div>
