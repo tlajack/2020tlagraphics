@@ -66,6 +66,13 @@ const Carousel = () => {
       </SlideBox>
       <SlideBox>
         <StaticImage
+          src="../images/homepage/acrylicisplay-01.jpg"
+          alt="Custom Acrylic Display"
+        />
+        <div className="label">Custom Acrylic Display</div>
+      </SlideBox>
+      <SlideBox>
+        <StaticImage
           src="../images/homepage/displayCase-01.png"
           alt="Display Case"
         />
