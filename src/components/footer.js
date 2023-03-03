@@ -1,7 +1,7 @@
-import React from "react";
-import { FaTwitter, FaFacebookF, FaLinkedin } from "react-icons/fa";
+import React from "react"
+import { FaTwitter, FaFacebookF, FaLinkedin } from "react-icons/fa"
 
-import styled from "styled-components";
+import styled from "styled-components"
 
 const TLAfooter = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ const TLAfooter = styled.div`
   .social_icons a {
     padding: 1em;
   }
-`;
+`
 
 const Footer = () => {
   return (
@@ -85,10 +85,10 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>© 2022 TLA Graphics. All rights reserved.</p>
+        <p>© 2023 TLA Graphics. All rights reserved.</p>
       </div>
     </TLAfooter>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
