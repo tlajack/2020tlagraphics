@@ -85,7 +85,10 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>© 2023 TLA Graphics. All rights reserved.</p>
+        <p>
+          Copyright &copy; {new Date().getFullYear()} TLA Graphics · All rights
+          reserved
+        </p>
       </div>
     </TLAfooter>
   )
