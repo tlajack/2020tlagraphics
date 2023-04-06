@@ -57,9 +57,6 @@ const Footer = () => {
             <a href="mailto:info@tlagraphics.com">info@tlagraphics.com</a>
           </p>
           <p className="social_icons" alt="twitter icon">
-            <a href="https://twitter.com/tlagraphics" title="twitter">
-              <FaTwitter alt="twitter icon" />
-            </a>
             <a
               href="https://www.facebook.com/tlagraphics/"
               title="facebook icon"
