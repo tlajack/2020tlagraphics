@@ -67,6 +67,11 @@ const Footer = () => {
               <FaLinkedin alt="linkedin" />
             </a>
           </p>
+          <p>
+            <a href="https://www.dropbox.com/request/FL93CCTD7UCysvFI2Pp6">
+              File upload
+            </a>
+          </p>
         </div>
         <div>
           <p>
